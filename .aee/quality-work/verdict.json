@@ -1,0 +1,23 @@
+{
+  "round": 1,
+  "verdict": "revise",
+  "reviewed": {"files": 12, "candidates": 72, "findings": 24, "drops": 48},
+  "issues": [
+    {
+      "type": "not_in_code",
+      "file": "src/nova/servicegroup/drivers/mc.py",
+      "line": 1,
+      "candidateId": "T2",
+      "message": "R0801 finding is attributed to mc.py:1 but the duplicate code lives at limit/local.py:200-215 and limit/placement.py:215-229; mc.py:1 shows neither the problem nor the fix location.",
+      "fix": "Refile the finding to src/nova/limit/local.py with lineRange {start:200, end:215}, or src/nova/limit/placement.py with lineRange {start:215, end:229}, so the finding points at the actual duplicate block rather than an unrelated line in mc.py."
+    },
+    {
+      "type": "duplicate",
+      "file": "src/nova/limit/placement.py",
+      "line": 152,
+      "candidateId": "T10",
+      "message": "R0913 finding ('too many arguments, 7/5') and the lizard params finding ('7 parameters, threshold 6') at line 152 both report excessive arity on enforce_num_instances_and_resources with the same fix (introduce a dataclass); the R0913 entry is a duplicate of the params finding.",
+      "fix": "Drop the R0913 finding and add a note to the params finding's detail that pylint also flags this at its threshold of 5, providing convergent tool evidence."
+    }
+  ]
+}
