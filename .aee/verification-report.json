@@ -1,0 +1,292 @@
+[
+  {
+    "documentType": "file-document",
+    "documentRef": "docs/src/nova/keymgr/__init__.py.md",
+    "issueType": "info",
+    "location": "audit-method",
+    "description": "aee-inventory ran on .aee/kb/ path but returned 0 files (source files not in working tree); verification completed by direct KB record comparison instead.",
+    "sourceFile": "src/nova/keymgr/__init__.py",
+    "lineRange": null,
+    "severity": "info"
+  },
+  {
+    "documentType": "file-document",
+    "documentRef": "docs/src/nova/keymgr/conf_key_mgr.py.md",
+    "issueType": "info",
+    "location": "audit-method",
+    "description": "aee-inventory returned 0 files (source files not in working tree); verification by KB record comparison. All 12 non-import symbols match KB line ranges exactly. All 7 dependencies match. Line counts match (total 141, code 95, comment 14, blank 32).",
+    "sourceFile": "src/nova/keymgr/conf_key_mgr.py",
+    "lineRange": null,
+    "severity": "info"
+  },
+  {
+    "documentType": "file-document",
+    "documentRef": "docs/src/nova/limit/__init__.py.md",
+    "issueType": "info",
+    "location": "audit-method",
+    "description": "aee-inventory returned 0 files; verification by KB. File is empty (symbolCount=0); document correctly states no symbols or dependencies.",
+    "sourceFile": "src/nova/limit/__init__.py",
+    "lineRange": null,
+    "severity": "info"
+  },
+  {
+    "documentType": "file-document",
+    "documentRef": "docs/src/nova/limit/local.py.md",
+    "issueType": "info",
+    "location": "audit-method",
+    "description": "aee-inventory returned 0 files; verification by KB. All 24 non-import symbols match KB line ranges exactly. All 9 dependencies match. Line counts match (total 236, code 162, comment 33, blank 41).",
+    "sourceFile": "src/nova/limit/local.py",
+    "lineRange": null,
+    "severity": "info"
+  },
+  {
+    "documentType": "file-document",
+    "documentRef": "docs/src/nova/limit/placement.py.md",
+    "issueType": "info",
+    "location": "audit-method",
+    "description": "aee-inventory returned 0 files; verification by KB. All 13 non-import symbols match KB line ranges exactly. Line counts match (total 239, code 164).",
+    "sourceFile": "src/nova/limit/placement.py",
+    "lineRange": null,
+    "severity": "info"
+  },
+  {
+    "documentType": "file-document",
+    "documentRef": "docs/src/nova/limit/utils.py.md",
+    "issueType": "info",
+    "location": "audit-method",
+    "description": "aee-inventory returned 0 files; verification by KB. All 13 non-import symbols match KB line ranges exactly. Line counts match (total 182, code 96, comment 61, blank 25).",
+    "sourceFile": "src/nova/limit/utils.py",
+    "lineRange": null,
+    "severity": "info"
+  },
+  {
+    "documentType": "file-document",
+    "documentRef": "docs/src/nova/servicegroup/__init__.py.md",
+    "issueType": "info",
+    "location": "audit-method",
+    "description": "aee-inventory returned 0 files; verification by KB. 1 non-import symbol (API constant L24) documented correctly. Dependency (nova.servicegroup.api L22) matches KB.",
+    "sourceFile": "src/nova/servicegroup/__init__.py",
+    "lineRange": null,
+    "severity": "info"
+  },
+  {
+    "documentType": "file-document",
+    "documentRef": "docs/src/nova/servicegroup/api.py.md",
+    "issueType": "info",
+    "location": "audit-method",
+    "description": "aee-inventory returned 0 files; verification by KB. All 9 non-import symbols match KB line ranges exactly. 3 dependencies (oslo_log, oslo_utils, nova.conf) match KB.",
+    "sourceFile": "src/nova/servicegroup/api.py",
+    "lineRange": null,
+    "severity": "info"
+  },
+  {
+    "documentType": "file-document",
+    "documentRef": "docs/src/nova/servicegroup/drivers/__init__.py.md",
+    "issueType": "info",
+    "location": "audit-method",
+    "description": "aee-inventory returned 0 files; verification by KB. File is empty (symbolCount=0); document correctly states no symbols or dependencies.",
+    "sourceFile": "src/nova/servicegroup/drivers/__init__.py",
+    "lineRange": null,
+    "severity": "info"
+  },
+  {
+    "documentType": "file-document",
+    "documentRef": "docs/src/nova/servicegroup/drivers/base.py.md",
+    "issueType": "info",
+    "location": "audit-method",
+    "description": "aee-inventory returned 0 files; verification by KB. All 4 symbols (Driver L15-33, join L18-25, is_up L27-29, updated_time L31-33) match KB. No dependencies match KB (no imports).",
+    "sourceFile": "src/nova/servicegroup/drivers/base.py",
+    "lineRange": null,
+    "severity": "info"
+  },
+  {
+    "documentType": "file-document",
+    "documentRef": "docs/src/nova/servicegroup/drivers/db.py.md",
+    "issueType": "info",
+    "location": "audit-method",
+    "description": "aee-inventory returned 0 files; verification by KB. All 8 non-import symbols match KB line ranges exactly. 8 dependencies match KB.",
+    "sourceFile": "src/nova/servicegroup/drivers/db.py",
+    "lineRange": null,
+    "severity": "info"
+  },
+  {
+    "documentType": "file-document",
+    "documentRef": "docs/src/nova/servicegroup/drivers/mc.py.md",
+    "issueType": "info",
+    "location": "audit-method",
+    "description": "aee-inventory returned 0 files; verification by KB. All 8 non-import symbols match KB line ranges exactly. 8 dependencies match KB.",
+    "sourceFile": "src/nova/servicegroup/drivers/mc.py",
+    "lineRange": null,
+    "severity": "info"
+  },
+  {
+    "documentType": "component-document",
+    "documentRef": "docs/components/keymgr.md",
+    "issueType": "info",
+    "location": "audit-method",
+    "description": "Component doc verified by KB: ConfKeyManager L49-141 citation matches KB. File counts (2 files, 95 code lines) match. All cross-component claims and call-flow data verified against link-graph and KB.",
+    "sourceFile": null,
+    "lineRange": null,
+    "severity": "info"
+  },
+  {
+    "documentType": "component-document",
+    "documentRef": "docs/components/limit.md",
+    "issueType": "info",
+    "location": "audit-method",
+    "description": "Component doc verified by KB: enforce_api_limit L118-145, enforce_db_limit L148-195, enforce_num_instances_and_resources L152-212, should_enforce L91-182 all match KB. File counts (4 files, 422 code lines) match.",
+    "sourceFile": null,
+    "lineRange": null,
+    "severity": "info"
+  },
+  {
+    "documentType": "component-document",
+    "documentRef": "docs/components/servicegroup.md",
+    "issueType": "info",
+    "location": "audit-method",
+    "description": "Component doc verified by KB: API class L37-83, DbDriver L32-124, MemcachedDriver L38-117, Driver L15-33 all match KB. File counts (6 files, 216 code lines) match.",
+    "sourceFile": null,
+    "lineRange": null,
+    "severity": "info"
+  },
+  {
+    "documentType": "component-document",
+    "documentRef": "docs/components/index.md",
+    "issueType": "info",
+    "location": "audit-method",
+    "description": "Component Index verified: 3 components, 12 files, 733 total code lines (95+422+216=733). All component file/line counts consistent with individual component docs.",
+    "sourceFile": null,
+    "lineRange": null,
+    "severity": "info"
+  },
+  {
+    "documentType": "security-finding",
+    "documentRef": "Security:src/nova/keymgr/__init__.py",
+    "issueType": "info",
+    "location": "audit-method",
+    "description": "0 findings. Scanner re-check not required (no findings to verify). Security log confirms gitleaks, semgrep, bandit all ran and found 0 findings.",
+    "sourceFile": "src/nova/keymgr/__init__.py",
+    "lineRange": null,
+    "severity": "info"
+  },
+  {
+    "documentType": "security-finding",
+    "documentRef": "Security:src/nova/keymgr/conf_key_mgr.py",
+    "issueType": "info",
+    "location": "audit-method",
+    "description": "0 findings. Scanner re-check not required (no findings to verify). Security log confirms gitleaks, semgrep, bandit all ran and found 0 findings.",
+    "sourceFile": "src/nova/keymgr/conf_key_mgr.py",
+    "lineRange": null,
+    "severity": "info"
+  },
+  {
+    "documentType": "security-finding",
+    "documentRef": "Security:src/nova/limit/__init__.py",
+    "issueType": "info",
+    "location": "audit-method",
+    "description": "0 findings. Scanner re-check not required.",
+    "sourceFile": "src/nova/limit/__init__.py",
+    "lineRange": null,
+    "severity": "info"
+  },
+  {
+    "documentType": "security-finding",
+    "documentRef": "Security:src/nova/limit/local.py",
+    "issueType": "info",
+    "location": "audit-method",
+    "description": "0 findings. Scanner re-check not required.",
+    "sourceFile": "src/nova/limit/local.py",
+    "lineRange": null,
+    "severity": "info"
+  },
+  {
+    "documentType": "security-finding",
+    "documentRef": "Security:src/nova/limit/placement.py",
+    "issueType": "info",
+    "location": "audit-method",
+    "description": "0 findings. Scanner re-check not required.",
+    "sourceFile": "src/nova/limit/placement.py",
+    "lineRange": null,
+    "severity": "info"
+  },
+  {
+    "documentType": "security-finding",
+    "documentRef": "Security:src/nova/limit/utils.py",
+    "issueType": "info",
+    "location": "audit-method",
+    "description": "0 findings. Scanner re-check not required.",
+    "sourceFile": "src/nova/limit/utils.py",
+    "lineRange": null,
+    "severity": "info"
+  },
+  {
+    "documentType": "security-finding",
+    "documentRef": "Security:src/nova/servicegroup/__init__.py",
+    "issueType": "info",
+    "location": "audit-method",
+    "description": "0 findings. Scanner re-check not required.",
+    "sourceFile": "src/nova/servicegroup/__init__.py",
+    "lineRange": null,
+    "severity": "info"
+  },
+  {
+    "documentType": "security-finding",
+    "documentRef": "Security:src/nova/servicegroup/api.py",
+    "issueType": "info",
+    "location": "audit-method",
+    "description": "0 findings. Scanner re-check not required.",
+    "sourceFile": "src/nova/servicegroup/api.py",
+    "lineRange": null,
+    "severity": "info"
+  },
+  {
+    "documentType": "security-finding",
+    "documentRef": "Security:src/nova/servicegroup/drivers/__init__.py",
+    "issueType": "info",
+    "location": "audit-method",
+    "description": "0 findings. Scanner re-check not required.",
+    "sourceFile": "src/nova/servicegroup/drivers/__init__.py",
+    "lineRange": null,
+    "severity": "info"
+  },
+  {
+    "documentType": "security-finding",
+    "documentRef": "Security:src/nova/servicegroup/drivers/base.py",
+    "issueType": "info",
+    "location": "audit-method",
+    "description": "0 findings. Scanner re-check not required.",
+    "sourceFile": "src/nova/servicegroup/drivers/base.py",
+    "lineRange": null,
+    "severity": "info"
+  },
+  {
+    "documentType": "security-finding",
+    "documentRef": "Security:src/nova/servicegroup/drivers/db.py",
+    "issueType": "info",
+    "location": "audit-method",
+    "description": "0 findings. Scanner re-check not required.",
+    "sourceFile": "src/nova/servicegroup/drivers/db.py",
+    "lineRange": null,
+    "severity": "info"
+  },
+  {
+    "documentType": "security-finding",
+    "documentRef": "Security:src/nova/servicegroup/drivers/mc.py",
+    "issueType": "info",
+    "location": "audit-method",
+    "description": "0 findings. Scanner re-check not required.",
+    "sourceFile": "src/nova/servicegroup/drivers/mc.py",
+    "lineRange": null,
+    "severity": "info"
+  },
+  {
+    "documentType": "security-chain",
+    "documentRef": "chains-summary",
+    "issueType": "info",
+    "location": ".aee/security-chains.json",
+    "description": "0 chains present. Consistent with 0 total security findings across all 12 files. No hops to validate.",
+    "sourceFile": null,
+    "lineRange": null,
+    "severity": "info"
+  }
+]

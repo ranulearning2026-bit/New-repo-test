@@ -37,3 +37,6 @@
 {"artifact": "Component:limit", "path": "docs/components/limit.md", "by": "new-pipeline-synthesizer", "commit": "90d2070", "ts": "2026-11-26T11:50:58Z"}
 {"artifact": "Component:servicegroup", "path": "docs/components/servicegroup.md", "by": "new-pipeline-synthesizer", "commit": "90d2070", "ts": "2026-11-26T11:50:59Z"}
 {"artifact": "Component Index", "path": "docs/components/index.md", "by": "new-pipeline-synthesizer", "commit": "90d2070", "ts": "2026-11-26T11:50:59Z"}
+{"artifact": "Extract Log", "path": ".aee/extract-log.jsonl", "by": "new-pipeline-verifier-critic", "commit": "a57e445", "ts": "2026-11-26T11:55:33Z"}
+{"artifact": "Verification Report", "path": ".aee/verification-report.json", "by": "new-pipeline-verifier-critic", "commit": "a57e445", "ts": "2026-11-26T12:01:01Z"}
+{"artifact": "Verification Summary", "path": ".aee/verification-summary.md", "by": "new-pipeline-verifier-critic", "commit": "a57e445", "ts": "2026-11-26T12:01:02Z"}
