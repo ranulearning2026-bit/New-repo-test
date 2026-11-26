@@ -2,8 +2,7 @@
 
 ## Overview
 
-_Purpose not yet written._
-6 files (50.0% of 12 source files), 216 code lines (29.5% of 733 total).
+Service group membership and health reporting subsystem with a pluggable driver API (`api.py` L37–L83, KB: `.aee/kb/src/nova/servicegroup/api.py.json`). Ships two concrete drivers: `DbDriver` (`drivers/db.py` L32–L124, KB: `.aee/kb/src/nova/servicegroup/drivers/db.py.json`) persists heartbeats to the database, and `MemcachedDriver` (`drivers/mc.py` L38–L117, KB: `.aee/kb/src/nova/servicegroup/drivers/mc.py.json`) uses a Memcached cache; both inherit `Driver` (`drivers/base.py` L15–L33, KB: `.aee/kb/src/nova/servicegroup/drivers/base.py.json`). 6 files (50.0% of 12 source files), 216 code lines (29.5% of 733 total). No cross-component neighbours recorded in the link graph.
 
 ## File Inventory
 

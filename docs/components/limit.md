@@ -2,8 +2,7 @@
 
 ## Overview
 
-_Purpose not yet written._
-4 files (33.3% of 12 source files), 422 code lines (57.6% of 733 total).
+Quota and resource-limit enforcement for Nova, covering API-level limits (`local.py` L118–L145, KB: `.aee/kb/src/nova/limit/local.py.json`), database-backed quotas (`local.py` L148–L195), and placement-service resource tracking against unified Keystone limits (`placement.py` L152–L212, KB: `.aee/kb/src/nova/limit/placement.py.json`). `utils.py` provides the `use_unified_limits` flag and the `should_enforce` decision logic (KB: `.aee/kb/src/nova/limit/utils.py.json`). 4 files (33.3% of 12 source files), 422 code lines (57.6% of 733 total). No cross-component neighbours recorded in the link graph.
 
 ## File Inventory
 

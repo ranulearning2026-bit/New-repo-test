@@ -2,8 +2,7 @@
 
 ## Overview
 
-_Purpose not yet written._
-2 files (16.7% of 12 source files), 95 code lines (13.0% of 733 total).
+Configuration-based key manager that implements the Castellan `key_manager.KeyManager` interface (`conf_key_mgr.py` L49–L141, KB: `.aee/kb/src/nova/keymgr/conf_key_mgr.py.json`). Serves a single AES symmetric key decoded from a hex value in `nova.conf`; all create/store/delete operations are either no-ops or raise `Forbidden`/`NotImplementedError` to prevent misuse. 2 files (16.7% of 12 source files), 95 code lines (13.0% of 733 total). No cross-component neighbours recorded in the link graph.
 
 ## File Inventory
 
