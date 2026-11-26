@@ -23,3 +23,5 @@
 {"artifact": "Security:src/nova/servicegroup/drivers/db.py", "path": ".aee/security/src/nova/servicegroup/drivers/db.py.findings.json", "by": "new-pipeline-security-reviewer", "commit": "c7497dc", "ts": "2026-11-26T11:36:50Z"}
 {"artifact": "Security:src/nova/servicegroup/drivers/mc.py", "path": ".aee/security/src/nova/servicegroup/drivers/mc.py.findings.json", "by": "new-pipeline-security-reviewer", "commit": "c7497dc", "ts": "2026-11-26T11:36:50Z"}
 {"artifact": "Security Log", "path": ".aee/security-log.jsonl", "by": "new-pipeline-security-reviewer", "commit": "c7497dc", "ts": "2026-11-26T11:36:50Z"}
+{"artifact": "Security Chains", "path": ".aee/security-chains.json", "by": "new-pipeline-cross-file-security-correlator", "commit": "c7497dc", "ts": "2026-11-26T11:38:15Z"}
+{"artifact": "Security Chains Summary", "path": ".aee/security-chains-summary.md", "by": "new-pipeline-cross-file-security-correlator", "commit": "c7497dc", "ts": "2026-11-26T11:38:15Z"}
