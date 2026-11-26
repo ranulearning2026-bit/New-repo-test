@@ -1,0 +1,212 @@
+[
+  {
+    "id": "uc-keymgr-get",
+    "name": "Retrieve encryption key",
+    "description": "A Nova component requests the AES symmetric encryption key from the Key Manager via the Castellan KeyManager interface.",
+    "steps": [
+      {
+        "from": "nova",
+        "to": "code-keymgr-ConfKeyManager-get",
+        "message": "get(context, managed_object_id)",
+        "note": "caller passes the fixed key_id"
+      },
+      {
+        "from": "code-keymgr-ConfKeyManager-get",
+        "to": "ext-castellan",
+        "message": "SymmetricKey('AES', len*8, bytes)",
+        "note": "builds castellan SymmetricKey from hex-decoded nova.conf value"
+      },
+      {
+        "from": "ext-castellan",
+        "to": "code-keymgr-ConfKeyManager-get",
+        "message": "SymmetricKey",
+        "return": true
+      },
+      {
+        "from": "code-keymgr-ConfKeyManager-get",
+        "to": "nova",
+        "message": "SymmetricKey",
+        "return": true
+      }
+    ]
+  },
+  {
+    "id": "uc-limit-enforce-api",
+    "name": "Enforce API quota limit",
+    "description": "A Nova API handler checks whether an action would exceed the configured API limit for an entity type.",
+    "steps": [
+      {
+        "from": "nova",
+        "to": "code-limit-enforce-api-limit",
+        "message": "enforce_api_limit(entity_type, count)"
+      },
+      {
+        "from": "code-limit-enforce-api-limit",
+        "to": "code-limit-use-unified-limits",
+        "message": "use_unified_limits()"
+      },
+      {
+        "from": "code-limit-use-unified-limits",
+        "to": "code-limit-enforce-api-limit",
+        "message": "bool",
+        "return": true
+      },
+      {
+        "from": "code-limit-enforce-api-limit",
+        "to": "ext-oslo-limit",
+        "message": "Enforcer(callback).enforce(project_id, deltas)",
+        "note": "when unified limits enabled"
+      },
+      {
+        "from": "ext-oslo-limit",
+        "to": "code-limit-should-enforce",
+        "message": "should_enforce(ProjectOverLimit)",
+        "note": "oslo_limit calls back on over-limit to check whether to enforce"
+      },
+      {
+        "from": "code-limit-should-enforce",
+        "to": "ext-oslo-limit",
+        "message": "bool",
+        "return": true
+      },
+      {
+        "from": "ext-oslo-limit",
+        "to": "code-limit-enforce-api-limit",
+        "message": "raises OverQuota or returns",
+        "return": true
+      },
+      {
+        "from": "code-limit-enforce-api-limit",
+        "to": "nova",
+        "message": "None or raises OverQuota",
+        "return": true
+      }
+    ]
+  },
+  {
+    "id": "uc-limit-enforce-placement",
+    "name": "Enforce placement resource limits",
+    "description": "The Nova scheduler enforces instance and resource class limits before allocating placement resources.",
+    "steps": [
+      {
+        "from": "nova",
+        "to": "code-limit-enforce-num-instances-and-resources",
+        "message": "enforce_num_instances_and_resources(context, project_id, request_spec, min_count, max_count)"
+      },
+      {
+        "from": "code-limit-enforce-num-instances-and-resources",
+        "to": "ext-oslo-limit",
+        "message": "Enforcer(callback).enforce(project_id, deltas)"
+      },
+      {
+        "from": "ext-oslo-limit",
+        "to": "code-limit-get-usage",
+        "message": "_get_usage(context, project_id, resource_names)",
+        "note": "enforcer calls usage callback"
+      },
+      {
+        "from": "code-limit-get-usage",
+        "to": "ext-nova-sched-client",
+        "message": "report_client_singleton().get_usages_counts_for_limits()",
+        "note": "queries placement API"
+      },
+      {
+        "from": "ext-nova-sched-client",
+        "to": "code-limit-get-usage",
+        "message": "dict[resource, count]",
+        "return": true
+      },
+      {
+        "from": "code-limit-get-usage",
+        "to": "ext-oslo-limit",
+        "message": "dict[resource, count]",
+        "return": true
+      },
+      {
+        "from": "ext-oslo-limit",
+        "to": "code-limit-enforce-num-instances-and-resources",
+        "message": "raises ProjectOverLimit or returns",
+        "return": true
+      },
+      {
+        "from": "code-limit-enforce-num-instances-and-resources",
+        "to": "nova",
+        "message": "int (allowed max_count) or raises",
+        "return": true
+      }
+    ]
+  },
+  {
+    "id": "uc-servicegroup-join",
+    "name": "Service registers with service group",
+    "description": "A Nova service worker registers itself in the service group and starts sending heartbeats.",
+    "steps": [
+      {
+        "from": "nova",
+        "to": "code-servicegroup-API-join",
+        "message": "API.join(member, group, service)"
+      },
+      {
+        "from": "code-servicegroup-API-join",
+        "to": "code-servicegroup-DbDriver-join",
+        "message": "DbDriver.join(member, group, service)",
+        "note": "or MemcachedDriver.join depending on configuration"
+      },
+      {
+        "from": "code-servicegroup-DbDriver-join",
+        "to": "ext-oslo-messaging",
+        "message": "loopingcall(self._report_state, interval)",
+        "note": "schedules periodic heartbeat"
+      },
+      {
+        "from": "ext-oslo-messaging",
+        "to": "code-servicegroup-DbDriver-join",
+        "message": "loopingcall handle",
+        "return": true
+      },
+      {
+        "from": "code-servicegroup-DbDriver-join",
+        "to": "code-servicegroup-API-join",
+        "message": "loopingcall handle",
+        "return": true
+      },
+      {
+        "from": "code-servicegroup-API-join",
+        "to": "nova",
+        "message": "loopingcall handle",
+        "return": true
+      }
+    ]
+  },
+  {
+    "id": "uc-servicegroup-is-up",
+    "name": "Check service liveness",
+    "description": "A Nova conductor checks whether a service node is considered alive.",
+    "steps": [
+      {
+        "from": "nova",
+        "to": "code-servicegroup-API-service-is-up",
+        "message": "API.service_is_up(service_ref)"
+      },
+      {
+        "from": "code-servicegroup-API-service-is-up",
+        "to": "code-servicegroup-DbDriver-is-up",
+        "message": "DbDriver.is_up(service_ref)",
+        "note": "or MemcachedDriver.is_up"
+      },
+      {
+        "from": "code-servicegroup-DbDriver-is-up",
+        "to": "nova",
+        "message": "bool (is_up)",
+        "return": true,
+        "note": "compares updated_at timestamp against configured threshold"
+      },
+      {
+        "from": "code-servicegroup-API-service-is-up",
+        "to": "nova",
+        "message": "bool",
+        "return": true
+      }
+    ]
+  }
+]

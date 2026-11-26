@@ -43,3 +43,14 @@
 {"artifact": "Verification Summary", "path": ".aee/verification-summary.md", "by": "new-pipeline-security-reporter", "commit": "4b5f359", "ts": "2026-11-26T12:05:27Z"}
 {"artifact": "Verification Report", "path": ".aee/verification-report.json", "by": "new-pipeline-security-reporter", "commit": "4b5f359", "ts": "2026-11-26T12:05:27Z"}
 {"artifact": "Security Report", "path": "docs/reports/security-report.md", "by": "new-pipeline-security-reporter", "commit": "4b5f359", "ts": "2026-11-26T12:06:22Z"}
+{"artifact": "Intake Summary", "path": ".aee/intake-summary.md", "by": "new-pipeline-architecture-artifact-generator", "commit": "5640ba3", "ts": "2026-11-26T12:03:32Z"}
+{"artifact": "Link Graph", "path": ".aee/link-graph.json", "by": "new-pipeline-architecture-artifact-generator", "commit": "5640ba3", "ts": "2026-11-26T12:03:32Z"}
+{"artifact": "Link Summary", "path": ".aee/link-summary.md", "by": "new-pipeline-architecture-artifact-generator", "commit": "5640ba3", "ts": "2026-11-26T12:03:32Z"}
+{"artifact": "C4 Model", "path": ".aee/c4-model.labelled.json", "by": "new-pipeline-architecture-artifact-generator", "commit": "5640ba3", "ts": "2026-11-26T12:14:51Z"}
+{"artifact": "System Architecture", "path": "docs/architecture/system.md", "by": "new-pipeline-architecture-artifact-generator", "commit": "5640ba3", "ts": "2026-11-26T12:14:51Z"}
+{"artifact": "C4 Code:keymgr", "path": "docs/architecture/c4-code/keymgr.md", "by": "new-pipeline-architecture-artifact-generator", "commit": "5640ba3", "ts": "2026-11-26T12:14:51Z"}
+{"artifact": "C4 Code:limit", "path": "docs/architecture/c4-code/limit.md", "by": "new-pipeline-architecture-artifact-generator", "commit": "5640ba3", "ts": "2026-11-26T12:14:51Z"}
+{"artifact": "C4 Code:servicegroup", "path": "docs/architecture/c4-code/servicegroup.md", "by": "new-pipeline-architecture-artifact-generator", "commit": "5640ba3", "ts": "2026-11-26T12:14:51Z"}
+{"artifact": "Use-Case Sequences", "path": "docs/architecture/use-cases.md", "by": "new-pipeline-architecture-artifact-generator", "commit": "5640ba3", "ts": "2026-11-26T12:14:51Z"}
+{"artifact": "Dependency Matrix", "path": "docs/architecture/dependency-matrix.md", "by": "new-pipeline-architecture-artifact-generator", "commit": "5640ba3", "ts": "2026-11-26T12:14:51Z"}
+{"artifact": "Unresolved Items", "path": "docs/architecture/unresolved.md", "by": "new-pipeline-architecture-artifact-generator", "commit": "5640ba3", "ts": "2026-11-26T12:14:51Z"}

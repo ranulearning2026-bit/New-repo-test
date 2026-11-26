@@ -1,0 +1,770 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-11-26T12:15:00Z",
+  "note": "Built from KB records (.aee/kb/) and link-graph (.aee/link-graph.json) — aee-c4-model unavailable in this environment; structure derives from the same deterministic inputs the tool would use.",
+  "source": {
+    "kb": ".aee/kb",
+    "graph": ".aee/link-graph.json",
+    "components": ".aee/components.json"
+  },
+  "components": [
+    {
+      "id": "comp-keymgr",
+      "type": "component",
+      "componentId": "keymgr",
+      "name": null,
+      "description": null,
+      "techLabel": null,
+      "files": 2,
+      "codeLines": 95,
+      "languages": ["Python"],
+      "entryPoints": []
+    },
+    {
+      "id": "comp-limit",
+      "type": "component",
+      "componentId": "limit",
+      "name": null,
+      "description": null,
+      "techLabel": null,
+      "files": 4,
+      "codeLines": 422,
+      "languages": ["Python"],
+      "entryPoints": []
+    },
+    {
+      "id": "comp-servicegroup",
+      "type": "component",
+      "componentId": "servicegroup",
+      "name": null,
+      "description": null,
+      "techLabel": null,
+      "files": 6,
+      "codeLines": 216,
+      "languages": ["Python"],
+      "entryPoints": []
+    }
+  ],
+  "code": [
+    {
+      "id": "code-keymgr-ConfKeyManager",
+      "type": "code",
+      "componentId": "keymgr",
+      "file": "src/nova/keymgr/conf_key_mgr.py",
+      "codeKind": "class",
+      "symbolName": "ConfKeyManager",
+      "lineRange": {"start": 49, "end": 141},
+      "name": null,
+      "description": null
+    },
+    {
+      "id": "code-keymgr-ConfKeyManager-create-key",
+      "type": "code",
+      "componentId": "keymgr",
+      "file": "src/nova/keymgr/conf_key_mgr.py",
+      "codeKind": "method",
+      "symbolName": "ConfKeyManager.create_key",
+      "parentId": "code-keymgr-ConfKeyManager",
+      "lineRange": {"start": 75, "end": 85},
+      "name": null,
+      "description": null
+    },
+    {
+      "id": "code-keymgr-ConfKeyManager-create-key-pair",
+      "type": "code",
+      "componentId": "keymgr",
+      "file": "src/nova/keymgr/conf_key_mgr.py",
+      "codeKind": "method",
+      "symbolName": "ConfKeyManager.create_key_pair",
+      "parentId": "code-keymgr-ConfKeyManager",
+      "lineRange": {"start": 87, "end": 89},
+      "name": null,
+      "description": null
+    },
+    {
+      "id": "code-keymgr-ConfKeyManager-store",
+      "type": "code",
+      "componentId": "keymgr",
+      "file": "src/nova/keymgr/conf_key_mgr.py",
+      "codeKind": "method",
+      "symbolName": "ConfKeyManager.store",
+      "parentId": "code-keymgr-ConfKeyManager",
+      "lineRange": {"start": 91, "end": 100},
+      "name": null,
+      "description": null
+    },
+    {
+      "id": "code-keymgr-ConfKeyManager-get",
+      "type": "code",
+      "componentId": "keymgr",
+      "file": "src/nova/keymgr/conf_key_mgr.py",
+      "codeKind": "method",
+      "symbolName": "ConfKeyManager.get",
+      "parentId": "code-keymgr-ConfKeyManager",
+      "lineRange": {"start": 102, "end": 115},
+      "name": null,
+      "description": null
+    },
+    {
+      "id": "code-keymgr-ConfKeyManager-delete",
+      "type": "code",
+      "componentId": "keymgr",
+      "file": "src/nova/keymgr/conf_key_mgr.py",
+      "codeKind": "method",
+      "symbolName": "ConfKeyManager.delete",
+      "parentId": "code-keymgr-ConfKeyManager",
+      "lineRange": {"start": 117, "end": 131},
+      "name": null,
+      "description": null
+    },
+    {
+      "id": "code-keymgr-ConfKeyManager-add-consumer",
+      "type": "code",
+      "componentId": "keymgr",
+      "file": "src/nova/keymgr/conf_key_mgr.py",
+      "codeKind": "method",
+      "symbolName": "ConfKeyManager.add_consumer",
+      "parentId": "code-keymgr-ConfKeyManager",
+      "lineRange": {"start": 133, "end": 136},
+      "name": null,
+      "description": null
+    },
+    {
+      "id": "code-keymgr-ConfKeyManager-remove-consumer",
+      "type": "code",
+      "componentId": "keymgr",
+      "file": "src/nova/keymgr/conf_key_mgr.py",
+      "codeKind": "method",
+      "symbolName": "ConfKeyManager.remove_consumer",
+      "parentId": "code-keymgr-ConfKeyManager",
+      "lineRange": {"start": 138, "end": 141},
+      "name": null,
+      "description": null
+    },
+    {
+      "id": "code-limit-IdentityClient",
+      "type": "code",
+      "componentId": "limit",
+      "file": "src/nova/limit/utils.py",
+      "codeKind": "class",
+      "symbolName": "IdentityClient",
+      "lineRange": {"start": 37, "end": 49},
+      "name": null,
+      "description": null
+    },
+    {
+      "id": "code-limit-enforce-api-limit",
+      "type": "code",
+      "componentId": "limit",
+      "file": "src/nova/limit/local.py",
+      "codeKind": "function",
+      "symbolName": "enforce_api_limit",
+      "lineRange": {"start": 118, "end": 145},
+      "name": null,
+      "description": null
+    },
+    {
+      "id": "code-limit-enforce-db-limit",
+      "type": "code",
+      "componentId": "limit",
+      "file": "src/nova/limit/local.py",
+      "codeKind": "function",
+      "symbolName": "enforce_db_limit",
+      "lineRange": {"start": 148, "end": 195},
+      "name": null,
+      "description": null
+    },
+    {
+      "id": "code-limit-enforce-num-instances-and-resources",
+      "type": "code",
+      "componentId": "limit",
+      "file": "src/nova/limit/placement.py",
+      "codeKind": "function",
+      "symbolName": "enforce_num_instances_and_resources",
+      "lineRange": {"start": 152, "end": 212},
+      "name": null,
+      "description": null
+    },
+    {
+      "id": "code-limit-get-usage",
+      "type": "code",
+      "componentId": "limit",
+      "file": "src/nova/limit/placement.py",
+      "codeKind": "function",
+      "symbolName": "_get_usage",
+      "lineRange": {"start": 45, "end": 113},
+      "name": null,
+      "description": null
+    },
+    {
+      "id": "code-limit-use-unified-limits",
+      "type": "code",
+      "componentId": "limit",
+      "file": "src/nova/limit/utils.py",
+      "codeKind": "function",
+      "symbolName": "use_unified_limits",
+      "lineRange": {"start": 33, "end": 34},
+      "name": null,
+      "description": null
+    },
+    {
+      "id": "code-limit-should-enforce",
+      "type": "code",
+      "componentId": "limit",
+      "file": "src/nova/limit/utils.py",
+      "codeKind": "function",
+      "symbolName": "should_enforce",
+      "lineRange": {"start": 91, "end": 182},
+      "name": null,
+      "description": null
+    },
+    {
+      "id": "code-servicegroup-API",
+      "type": "code",
+      "componentId": "servicegroup",
+      "file": "src/nova/servicegroup/api.py",
+      "codeKind": "class",
+      "symbolName": "API",
+      "lineRange": {"start": 37, "end": 83},
+      "name": null,
+      "description": null
+    },
+    {
+      "id": "code-servicegroup-API-join",
+      "type": "code",
+      "componentId": "servicegroup",
+      "file": "src/nova/servicegroup/api.py",
+      "codeKind": "method",
+      "symbolName": "API.join",
+      "parentId": "code-servicegroup-API",
+      "lineRange": {"start": 63, "end": 70},
+      "name": null,
+      "description": null
+    },
+    {
+      "id": "code-servicegroup-API-service-is-up",
+      "type": "code",
+      "componentId": "servicegroup",
+      "file": "src/nova/servicegroup/api.py",
+      "codeKind": "method",
+      "symbolName": "API.service_is_up",
+      "parentId": "code-servicegroup-API",
+      "lineRange": {"start": 72, "end": 79},
+      "name": null,
+      "description": null
+    },
+    {
+      "id": "code-servicegroup-API-get-updated-time",
+      "type": "code",
+      "componentId": "servicegroup",
+      "file": "src/nova/servicegroup/api.py",
+      "codeKind": "method",
+      "symbolName": "API.get_updated_time",
+      "parentId": "code-servicegroup-API",
+      "lineRange": {"start": 81, "end": 83},
+      "name": null,
+      "description": null
+    },
+    {
+      "id": "code-servicegroup-Driver",
+      "type": "code",
+      "componentId": "servicegroup",
+      "file": "src/nova/servicegroup/drivers/base.py",
+      "codeKind": "class",
+      "symbolName": "Driver",
+      "lineRange": {"start": 15, "end": 33},
+      "name": null,
+      "description": null
+    },
+    {
+      "id": "code-servicegroup-DbDriver",
+      "type": "code",
+      "componentId": "servicegroup",
+      "file": "src/nova/servicegroup/drivers/db.py",
+      "codeKind": "class",
+      "symbolName": "DbDriver",
+      "lineRange": {"start": 32, "end": 124},
+      "name": null,
+      "description": null
+    },
+    {
+      "id": "code-servicegroup-DbDriver-join",
+      "type": "code",
+      "componentId": "servicegroup",
+      "file": "src/nova/servicegroup/drivers/db.py",
+      "codeKind": "method",
+      "symbolName": "DbDriver.join",
+      "parentId": "code-servicegroup-DbDriver",
+      "lineRange": {"start": 37, "end": 55},
+      "name": null,
+      "description": null
+    },
+    {
+      "id": "code-servicegroup-DbDriver-is-up",
+      "type": "code",
+      "componentId": "servicegroup",
+      "file": "src/nova/servicegroup/drivers/db.py",
+      "codeKind": "method",
+      "symbolName": "DbDriver.is_up",
+      "parentId": "code-servicegroup-DbDriver",
+      "lineRange": {"start": 57, "end": 81},
+      "name": null,
+      "description": null
+    },
+    {
+      "id": "code-servicegroup-DbDriver-report-state",
+      "type": "code",
+      "componentId": "servicegroup",
+      "file": "src/nova/servicegroup/drivers/db.py",
+      "codeKind": "method",
+      "symbolName": "DbDriver._report_state",
+      "parentId": "code-servicegroup-DbDriver",
+      "lineRange": {"start": 87, "end": 124},
+      "name": null,
+      "description": null
+    },
+    {
+      "id": "code-servicegroup-MemcachedDriver",
+      "type": "code",
+      "componentId": "servicegroup",
+      "file": "src/nova/servicegroup/drivers/mc.py",
+      "codeKind": "class",
+      "symbolName": "MemcachedDriver",
+      "lineRange": {"start": 38, "end": 117},
+      "name": null,
+      "description": null
+    },
+    {
+      "id": "code-servicegroup-MemcachedDriver-join",
+      "type": "code",
+      "componentId": "servicegroup",
+      "file": "src/nova/servicegroup/drivers/mc.py",
+      "codeKind": "method",
+      "symbolName": "MemcachedDriver.join",
+      "parentId": "code-servicegroup-MemcachedDriver",
+      "lineRange": {"start": 44, "end": 60},
+      "name": null,
+      "description": null
+    },
+    {
+      "id": "code-servicegroup-MemcachedDriver-is-up",
+      "type": "code",
+      "componentId": "servicegroup",
+      "file": "src/nova/servicegroup/drivers/mc.py",
+      "codeKind": "method",
+      "symbolName": "MemcachedDriver.is_up",
+      "parentId": "code-servicegroup-MemcachedDriver",
+      "lineRange": {"start": 62, "end": 71},
+      "name": null,
+      "description": null
+    },
+    {
+      "id": "code-servicegroup-MemcachedDriver-updated-time",
+      "type": "code",
+      "componentId": "servicegroup",
+      "file": "src/nova/servicegroup/drivers/mc.py",
+      "codeKind": "method",
+      "symbolName": "MemcachedDriver.updated_time",
+      "parentId": "code-servicegroup-MemcachedDriver",
+      "lineRange": {"start": 73, "end": 90},
+      "name": null,
+      "description": null
+    },
+    {
+      "id": "code-servicegroup-MemcachedDriver-report-state",
+      "type": "code",
+      "componentId": "servicegroup",
+      "file": "src/nova/servicegroup/drivers/mc.py",
+      "codeKind": "method",
+      "symbolName": "MemcachedDriver._report_state",
+      "parentId": "code-servicegroup-MemcachedDriver",
+      "lineRange": {"start": 92, "end": 117},
+      "name": null,
+      "description": null
+    }
+  ],
+  "context": [
+    {
+      "id": "ext-castellan",
+      "type": "context",
+      "module": "castellan",
+      "moduleKind": "third-party",
+      "name": null,
+      "description": null,
+      "evidence": {"usedBy": ["keymgr"], "source": "Link Graph externalImports"}
+    },
+    {
+      "id": "ext-oslo-log",
+      "type": "context",
+      "module": "oslo_log",
+      "moduleKind": "third-party",
+      "name": null,
+      "description": null,
+      "evidence": {"usedBy": ["keymgr", "limit", "servicegroup"], "source": "Link Graph externalImports"}
+    },
+    {
+      "id": "ext-oslo-limit",
+      "type": "context",
+      "module": "oslo_limit",
+      "moduleKind": "third-party",
+      "name": null,
+      "description": null,
+      "evidence": {"usedBy": ["limit"], "source": "Link Graph externalImports"}
+    },
+    {
+      "id": "ext-openstack",
+      "type": "context",
+      "module": "openstack",
+      "moduleKind": "third-party",
+      "name": null,
+      "description": null,
+      "evidence": {"usedBy": ["limit"], "source": "Link Graph externalImports"}
+    },
+    {
+      "id": "ext-os-resource-classes",
+      "type": "context",
+      "module": "os_resource_classes",
+      "moduleKind": "third-party",
+      "name": null,
+      "description": null,
+      "evidence": {"usedBy": ["limit"], "source": "Link Graph externalImports"}
+    },
+    {
+      "id": "ext-oslo-utils",
+      "type": "context",
+      "module": "oslo_utils",
+      "moduleKind": "third-party",
+      "name": null,
+      "description": null,
+      "evidence": {"usedBy": ["servicegroup"], "source": "Link Graph externalImports"}
+    },
+    {
+      "id": "ext-oslo-messaging",
+      "type": "context",
+      "module": "oslo_messaging",
+      "moduleKind": "third-party",
+      "name": null,
+      "description": null,
+      "evidence": {"usedBy": ["servicegroup"], "source": "Link Graph externalImports"}
+    },
+    {
+      "id": "ext-binascii",
+      "type": "context",
+      "module": "binascii",
+      "moduleKind": "stdlib",
+      "name": null,
+      "description": null,
+      "evidence": {"usedBy": ["keymgr"], "source": "Link Graph externalImports"}
+    },
+    {
+      "id": "ext-functools",
+      "type": "context",
+      "module": "functools",
+      "moduleKind": "stdlib",
+      "name": null,
+      "description": null,
+      "evidence": {"usedBy": ["limit"], "source": "Link Graph externalImports"}
+    },
+    {
+      "id": "ext-typing",
+      "type": "context",
+      "module": "typing",
+      "moduleKind": "stdlib",
+      "name": null,
+      "description": null,
+      "evidence": {"usedBy": ["limit"], "source": "Link Graph externalImports"}
+    },
+    {
+      "id": "ext-datetime",
+      "type": "context",
+      "module": "datetime",
+      "moduleKind": "stdlib",
+      "name": null,
+      "description": null,
+      "evidence": {"usedBy": ["servicegroup"], "source": "Link Graph externalImports"}
+    },
+    {
+      "id": "ext-nova-conf",
+      "type": "context",
+      "module": "nova.conf",
+      "moduleKind": "unresolved-sibling",
+      "name": null,
+      "description": null,
+      "evidence": {"usedBy": ["keymgr", "limit", "servicegroup"], "source": "Link Graph unresolved (module-not-found)"}
+    },
+    {
+      "id": "ext-nova",
+      "type": "context",
+      "module": "nova",
+      "moduleKind": "unresolved-sibling",
+      "name": null,
+      "description": null,
+      "evidence": {"usedBy": ["keymgr", "limit", "servicegroup"], "source": "Link Graph unresolved (module-not-found)"}
+    },
+    {
+      "id": "ext-nova-i18n",
+      "type": "context",
+      "module": "nova.i18n",
+      "moduleKind": "unresolved-sibling",
+      "name": null,
+      "description": null,
+      "evidence": {"usedBy": ["keymgr", "servicegroup"], "source": "Link Graph unresolved (module-not-found)"}
+    },
+    {
+      "id": "ext-nova-scheduler-client",
+      "type": "context",
+      "module": "nova.scheduler.client",
+      "moduleKind": "unresolved-sibling",
+      "name": null,
+      "description": null,
+      "evidence": {"usedBy": ["limit"], "source": "Link Graph unresolved (module-not-found)"}
+    },
+    {
+      "id": "ext-nova-scheduler",
+      "type": "context",
+      "module": "nova.scheduler",
+      "moduleKind": "unresolved-sibling",
+      "name": null,
+      "description": null,
+      "evidence": {"usedBy": ["limit"], "source": "Link Graph unresolved (module-not-found)"}
+    }
+  ],
+  "relationships": [
+    {
+      "id": "rel-file-1",
+      "fromId": "code-limit-enforce-api-limit",
+      "toId": "code-limit-use-unified-limits",
+      "fromFile": "src/nova/limit/local.py",
+      "toFile": "src/nova/limit/utils.py",
+      "kind": "static",
+      "count": 3,
+      "kinds": ["call", "import"],
+      "label": null
+    },
+    {
+      "id": "rel-file-2",
+      "fromId": "code-limit-get-usage",
+      "toId": "code-limit-use-unified-limits",
+      "fromFile": "src/nova/limit/placement.py",
+      "toFile": "src/nova/limit/utils.py",
+      "kind": "static",
+      "count": 3,
+      "kinds": ["call", "import"],
+      "label": null
+    },
+    {
+      "id": "rel-file-3",
+      "fromFile": "src/nova/servicegroup/__init__.py",
+      "toFile": "src/nova/servicegroup/api.py",
+      "kind": "static",
+      "count": 1,
+      "kinds": ["import"],
+      "label": null
+    },
+    {
+      "id": "rel-file-4",
+      "fromId": "code-servicegroup-DbDriver",
+      "toId": "code-servicegroup-API",
+      "fromFile": "src/nova/servicegroup/drivers/db.py",
+      "toFile": "src/nova/servicegroup/api.py",
+      "kind": "static",
+      "count": 1,
+      "kinds": ["import"],
+      "label": null
+    },
+    {
+      "id": "rel-file-5",
+      "fromId": "code-servicegroup-DbDriver",
+      "toId": "code-servicegroup-Driver",
+      "fromFile": "src/nova/servicegroup/drivers/db.py",
+      "toFile": "src/nova/servicegroup/drivers/base.py",
+      "kind": "static",
+      "count": 2,
+      "kinds": ["import", "inherit"],
+      "label": null
+    },
+    {
+      "id": "rel-file-6",
+      "fromId": "code-servicegroup-MemcachedDriver",
+      "toId": "code-servicegroup-API",
+      "fromFile": "src/nova/servicegroup/drivers/mc.py",
+      "toFile": "src/nova/servicegroup/api.py",
+      "kind": "static",
+      "count": 1,
+      "kinds": ["import"],
+      "label": null
+    },
+    {
+      "id": "rel-file-7",
+      "fromId": "code-servicegroup-MemcachedDriver",
+      "toId": "code-servicegroup-Driver",
+      "fromFile": "src/nova/servicegroup/drivers/mc.py",
+      "toFile": "src/nova/servicegroup/drivers/base.py",
+      "kind": "static",
+      "count": 2,
+      "kinds": ["import", "inherit"],
+      "label": null
+    },
+    {
+      "id": "rel-ext-keymgr-castellan",
+      "fromId": "comp-keymgr",
+      "toId": "ext-castellan",
+      "kind": "uses-external",
+      "label": null
+    },
+    {
+      "id": "rel-ext-keymgr-oslo-log",
+      "fromId": "comp-keymgr",
+      "toId": "ext-oslo-log",
+      "kind": "uses-external",
+      "label": null
+    },
+    {
+      "id": "rel-ext-keymgr-binascii",
+      "fromId": "comp-keymgr",
+      "toId": "ext-binascii",
+      "kind": "uses-external",
+      "label": null
+    },
+    {
+      "id": "rel-ext-keymgr-nova-conf",
+      "fromId": "comp-keymgr",
+      "toId": "ext-nova-conf",
+      "kind": "uses-external",
+      "label": null
+    },
+    {
+      "id": "rel-ext-keymgr-nova",
+      "fromId": "comp-keymgr",
+      "toId": "ext-nova",
+      "kind": "uses-external",
+      "label": null
+    },
+    {
+      "id": "rel-ext-keymgr-nova-i18n",
+      "fromId": "comp-keymgr",
+      "toId": "ext-nova-i18n",
+      "kind": "uses-external",
+      "label": null
+    },
+    {
+      "id": "rel-ext-limit-oslo-log",
+      "fromId": "comp-limit",
+      "toId": "ext-oslo-log",
+      "kind": "uses-external",
+      "label": null
+    },
+    {
+      "id": "rel-ext-limit-oslo-limit",
+      "fromId": "comp-limit",
+      "toId": "ext-oslo-limit",
+      "kind": "uses-external",
+      "label": null
+    },
+    {
+      "id": "rel-ext-limit-openstack",
+      "fromId": "comp-limit",
+      "toId": "ext-openstack",
+      "kind": "uses-external",
+      "label": null
+    },
+    {
+      "id": "rel-ext-limit-os-resource-classes",
+      "fromId": "comp-limit",
+      "toId": "ext-os-resource-classes",
+      "kind": "uses-external",
+      "label": null
+    },
+    {
+      "id": "rel-ext-limit-functools",
+      "fromId": "comp-limit",
+      "toId": "ext-functools",
+      "kind": "uses-external",
+      "label": null
+    },
+    {
+      "id": "rel-ext-limit-typing",
+      "fromId": "comp-limit",
+      "toId": "ext-typing",
+      "kind": "uses-external",
+      "label": null
+    },
+    {
+      "id": "rel-ext-limit-nova-conf",
+      "fromId": "comp-limit",
+      "toId": "ext-nova-conf",
+      "kind": "uses-external",
+      "label": null
+    },
+    {
+      "id": "rel-ext-limit-nova",
+      "fromId": "comp-limit",
+      "toId": "ext-nova",
+      "kind": "uses-external",
+      "label": null
+    },
+    {
+      "id": "rel-ext-limit-nova-scheduler-client",
+      "fromId": "comp-limit",
+      "toId": "ext-nova-scheduler-client",
+      "kind": "uses-external",
+      "label": null
+    },
+    {
+      "id": "rel-ext-limit-nova-scheduler",
+      "fromId": "comp-limit",
+      "toId": "ext-nova-scheduler",
+      "kind": "uses-external",
+      "label": null
+    },
+    {
+      "id": "rel-ext-servicegroup-oslo-log",
+      "fromId": "comp-servicegroup",
+      "toId": "ext-oslo-log",
+      "kind": "uses-external",
+      "label": null
+    },
+    {
+      "id": "rel-ext-servicegroup-oslo-utils",
+      "fromId": "comp-servicegroup",
+      "toId": "ext-oslo-utils",
+      "kind": "uses-external",
+      "label": null
+    },
+    {
+      "id": "rel-ext-servicegroup-oslo-messaging",
+      "fromId": "comp-servicegroup",
+      "toId": "ext-oslo-messaging",
+      "kind": "uses-external",
+      "label": null
+    },
+    {
+      "id": "rel-ext-servicegroup-datetime",
+      "fromId": "comp-servicegroup",
+      "toId": "ext-datetime",
+      "kind": "uses-external",
+      "label": null
+    },
+    {
+      "id": "rel-ext-servicegroup-nova-conf",
+      "fromId": "comp-servicegroup",
+      "toId": "ext-nova-conf",
+      "kind": "uses-external",
+      "label": null
+    },
+    {
+      "id": "rel-ext-servicegroup-nova",
+      "fromId": "comp-servicegroup",
+      "toId": "ext-nova",
+      "kind": "uses-external",
+      "label": null
+    },
+    {
+      "id": "rel-ext-servicegroup-nova-i18n",
+      "fromId": "comp-servicegroup",
+      "toId": "ext-nova-i18n",
+      "kind": "uses-external",
+      "label": null
+    }
+  ]
+}
