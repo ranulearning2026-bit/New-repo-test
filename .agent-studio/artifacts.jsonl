@@ -54,3 +54,20 @@
 {"artifact": "Use-Case Sequences", "path": "docs/architecture/use-cases.md", "by": "new-pipeline-architecture-artifact-generator", "commit": "5640ba3", "ts": "2026-11-26T12:14:51Z"}
 {"artifact": "Dependency Matrix", "path": "docs/architecture/dependency-matrix.md", "by": "new-pipeline-architecture-artifact-generator", "commit": "5640ba3", "ts": "2026-11-26T12:14:51Z"}
 {"artifact": "Unresolved Items", "path": "docs/architecture/unresolved.md", "by": "new-pipeline-architecture-artifact-generator", "commit": "5640ba3", "ts": "2026-11-26T12:14:51Z"}
+{"artifact": "Quality Log", "path": ".aee/quality-log.jsonl", "by": "new-pipeline-quality-reporter", "commit": "5640ba3", "ts": "2026-11-26T12:07:16Z"}
+{"artifact": "Quality:src/nova/servicegroup/__init__.py", "path": ".aee/quality/src/nova/servicegroup/__init__.py.findings.json", "by": "new-pipeline-quality-reporter", "commit": "5640ba3", "ts": "2026-11-26T12:07:50Z"}
+{"artifact": "Quality:src/nova/servicegroup/api.py", "path": ".aee/quality/src/nova/servicegroup/api.py.findings.json", "by": "new-pipeline-quality-reporter", "commit": "5640ba3", "ts": "2026-11-26T12:07:50Z"}
+{"artifact": "Quality:src/nova/servicegroup/drivers/mc.py", "path": ".aee/quality/src/nova/servicegroup/drivers/mc.py.findings.json", "by": "new-pipeline-quality-reporter", "commit": "5640ba3", "ts": "2026-11-26T12:07:50Z"}
+{"artifact": "Quality:src/nova/servicegroup/drivers/db.py", "path": ".aee/quality/src/nova/servicegroup/drivers/db.py.findings.json", "by": "new-pipeline-quality-reporter", "commit": "5640ba3", "ts": "2026-11-26T12:07:51Z"}
+{"artifact": "Quality:src/nova/servicegroup/drivers/__init__.py", "path": ".aee/quality/src/nova/servicegroup/drivers/__init__.py.findings.json", "by": "new-pipeline-quality-reporter", "commit": "5640ba3", "ts": "2026-11-26T12:07:51Z"}
+{"artifact": "Quality:src/nova/servicegroup/drivers/base.py", "path": ".aee/quality/src/nova/servicegroup/drivers/base.py.findings.json", "by": "new-pipeline-quality-reporter", "commit": "5640ba3", "ts": "2026-11-26T12:07:51Z"}
+{"artifact": "Quality:src/nova/limit/local.py", "path": ".aee/quality/src/nova/limit/local.py.findings.json", "by": "new-pipeline-quality-reporter", "commit": "5640ba3", "ts": "2026-11-26T12:07:51Z"}
+{"artifact": "Quality:src/nova/limit/__init__.py", "path": ".aee/quality/src/nova/limit/__init__.py.findings.json", "by": "new-pipeline-quality-reporter", "commit": "5640ba3", "ts": "2026-11-26T12:07:51Z"}
+{"artifact": "Quality:src/nova/limit/utils.py", "path": ".aee/quality/src/nova/limit/utils.py.findings.json", "by": "new-pipeline-quality-reporter", "commit": "5640ba3", "ts": "2026-11-26T12:07:51Z"}
+{"artifact": "Quality:src/nova/limit/placement.py", "path": ".aee/quality/src/nova/limit/placement.py.findings.json", "by": "new-pipeline-quality-reporter", "commit": "5640ba3", "ts": "2026-11-26T12:07:51Z"}
+{"artifact": "Quality:src/nova/keymgr/__init__.py", "path": ".aee/quality/src/nova/keymgr/__init__.py.findings.json", "by": "new-pipeline-quality-reporter", "commit": "5640ba3", "ts": "2026-11-26T12:07:51Z"}
+{"artifact": "Quality:src/nova/keymgr/conf_key_mgr.py", "path": ".aee/quality/src/nova/keymgr/conf_key_mgr.py.findings.json", "by": "new-pipeline-quality-reporter", "commit": "5640ba3", "ts": "2026-11-26T12:07:51Z"}
+{"artifact": "Quality Report", "path": "docs/reports/quality-report.md", "by": "new-pipeline-quality-reporter", "commit": "5640ba3", "ts": "2026-11-26T12:16:30Z"}
+{"artifact": "Quality Report:limit", "path": "docs/reports/quality/limit.md", "by": "new-pipeline-quality-reporter", "commit": "5640ba3", "ts": "2026-11-26T12:16:30Z"}
+{"artifact": "Quality Report:servicegroup", "path": "docs/reports/quality/servicegroup.md", "by": "new-pipeline-quality-reporter", "commit": "5640ba3", "ts": "2026-11-26T12:16:30Z"}
+{"artifact": "Quality Report:keymgr", "path": "docs/reports/quality/keymgr.md", "by": "new-pipeline-quality-reporter", "commit": "5640ba3", "ts": "2026-11-26T12:16:30Z"}
