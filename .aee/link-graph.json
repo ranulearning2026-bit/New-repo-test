@@ -1,0 +1,386 @@
+{
+  "fileEdges": [
+    {
+      "count": 3,
+      "crossComponent": false,
+      "firstFromLine": 24,
+      "from": "src/nova/limit/local.py",
+      "fromComponent": "limit",
+      "kinds": [
+        "call",
+        "import"
+      ],
+      "to": "src/nova/limit/utils.py",
+      "toComponent": "limit"
+    },
+    {
+      "count": 3,
+      "crossComponent": false,
+      "firstFromLine": 22,
+      "from": "src/nova/limit/placement.py",
+      "fromComponent": "limit",
+      "kinds": [
+        "call",
+        "import"
+      ],
+      "to": "src/nova/limit/utils.py",
+      "toComponent": "limit"
+    },
+    {
+      "count": 1,
+      "crossComponent": false,
+      "firstFromLine": 22,
+      "from": "src/nova/servicegroup/__init__.py",
+      "fromComponent": "servicegroup",
+      "kinds": [
+        "import"
+      ],
+      "to": "src/nova/servicegroup/api.py",
+      "toComponent": "servicegroup"
+    },
+    {
+      "count": 1,
+      "crossComponent": false,
+      "firstFromLine": 23,
+      "from": "src/nova/servicegroup/drivers/db.py",
+      "fromComponent": "servicegroup",
+      "kinds": [
+        "import"
+      ],
+      "to": "src/nova/servicegroup/api.py",
+      "toComponent": "servicegroup"
+    },
+    {
+      "count": 2,
+      "crossComponent": false,
+      "firstFromLine": 24,
+      "from": "src/nova/servicegroup/drivers/db.py",
+      "fromComponent": "servicegroup",
+      "kinds": [
+        "import",
+        "inherit"
+      ],
+      "to": "src/nova/servicegroup/drivers/base.py",
+      "toComponent": "servicegroup"
+    },
+    {
+      "count": 1,
+      "crossComponent": false,
+      "firstFromLine": 28,
+      "from": "src/nova/servicegroup/drivers/mc.py",
+      "fromComponent": "servicegroup",
+      "kinds": [
+        "import"
+      ],
+      "to": "src/nova/servicegroup/api.py",
+      "toComponent": "servicegroup"
+    },
+    {
+      "count": 2,
+      "crossComponent": false,
+      "firstFromLine": 29,
+      "from": "src/nova/servicegroup/drivers/mc.py",
+      "fromComponent": "servicegroup",
+      "kinds": [
+        "import",
+        "inherit"
+      ],
+      "to": "src/nova/servicegroup/drivers/base.py",
+      "toComponent": "servicegroup"
+    }
+  ],
+  "resolved": [
+    {
+      "crossComponent": false,
+      "from": "src/nova/limit/local.py",
+      "fromLine": 24,
+      "kind": "module",
+      "symbol": "utils",
+      "to": "src/nova/limit/utils.py",
+      "toLine": 1,
+      "usage": "import"
+    },
+    {
+      "crossComponent": false,
+      "from": "src/nova/limit/local.py",
+      "fromLine": 124,
+      "kind": "function",
+      "symbol": "use_unified_limits",
+      "to": "src/nova/limit/utils.py",
+      "toLine": 33,
+      "usage": "call"
+    },
+    {
+      "crossComponent": false,
+      "from": "src/nova/limit/local.py",
+      "fromLine": 142,
+      "kind": "function",
+      "symbol": "should_enforce",
+      "to": "src/nova/limit/utils.py",
+      "toLine": 91,
+      "usage": "call"
+    },
+    {
+      "crossComponent": false,
+      "from": "src/nova/limit/placement.py",
+      "fromLine": 22,
+      "kind": "module",
+      "symbol": "utils",
+      "to": "src/nova/limit/utils.py",
+      "toLine": 1,
+      "usage": "import"
+    },
+    {
+      "crossComponent": false,
+      "from": "src/nova/limit/placement.py",
+      "fromLine": 51,
+      "kind": "function",
+      "symbol": "use_unified_limits",
+      "to": "src/nova/limit/utils.py",
+      "toLine": 33,
+      "usage": "call"
+    },
+    {
+      "crossComponent": false,
+      "from": "src/nova/limit/placement.py",
+      "fromLine": 197,
+      "kind": "function",
+      "symbol": "should_enforce",
+      "to": "src/nova/limit/utils.py",
+      "toLine": 91,
+      "usage": "call"
+    },
+    {
+      "crossComponent": false,
+      "from": "src/nova/servicegroup/__init__.py",
+      "fromLine": 22,
+      "kind": "module",
+      "symbol": "api",
+      "to": "src/nova/servicegroup/api.py",
+      "toLine": 1,
+      "usage": "import"
+    },
+    {
+      "crossComponent": false,
+      "from": "src/nova/servicegroup/drivers/db.py",
+      "fromLine": 23,
+      "kind": "module",
+      "symbol": "api",
+      "to": "src/nova/servicegroup/api.py",
+      "toLine": 1,
+      "usage": "import"
+    },
+    {
+      "crossComponent": false,
+      "from": "src/nova/servicegroup/drivers/db.py",
+      "fromLine": 24,
+      "kind": "module",
+      "symbol": "base",
+      "to": "src/nova/servicegroup/drivers/base.py",
+      "toLine": 1,
+      "usage": "import"
+    },
+    {
+      "crossComponent": false,
+      "from": "src/nova/servicegroup/drivers/db.py",
+      "fromLine": 32,
+      "kind": "class",
+      "symbol": "Driver",
+      "to": "src/nova/servicegroup/drivers/base.py",
+      "toLine": 15,
+      "usage": "inherit"
+    },
+    {
+      "crossComponent": false,
+      "from": "src/nova/servicegroup/drivers/mc.py",
+      "fromLine": 28,
+      "kind": "module",
+      "symbol": "api",
+      "to": "src/nova/servicegroup/api.py",
+      "toLine": 1,
+      "usage": "import"
+    },
+    {
+      "crossComponent": false,
+      "from": "src/nova/servicegroup/drivers/mc.py",
+      "fromLine": 29,
+      "kind": "module",
+      "symbol": "base",
+      "to": "src/nova/servicegroup/drivers/base.py",
+      "toLine": 1,
+      "usage": "import"
+    },
+    {
+      "crossComponent": false,
+      "from": "src/nova/servicegroup/drivers/mc.py",
+      "fromLine": 38,
+      "kind": "class",
+      "symbol": "Driver",
+      "to": "src/nova/servicegroup/drivers/base.py",
+      "toLine": 15,
+      "usage": "inherit"
+    }
+  ],
+  "ambiguous": [],
+  "unresolved": [
+    {
+      "from": "src/nova/keymgr/conf_key_mgr.py",
+      "fromLine": 40,
+      "reason": "module-not-found",
+      "symbol": "nova.conf",
+      "usage": "import"
+    },
+    {
+      "from": "src/nova/keymgr/conf_key_mgr.py",
+      "fromLine": 41,
+      "reason": "module-not-found",
+      "symbol": "nova",
+      "usage": "import"
+    },
+    {
+      "from": "src/nova/keymgr/conf_key_mgr.py",
+      "fromLine": 42,
+      "reason": "module-not-found",
+      "symbol": "nova.i18n",
+      "usage": "import"
+    },
+    {
+      "from": "src/nova/limit/local.py",
+      "fromLine": 22,
+      "reason": "module-not-found",
+      "symbol": "nova.conf",
+      "usage": "import"
+    },
+    {
+      "from": "src/nova/limit/local.py",
+      "fromLine": 23,
+      "reason": "module-not-found",
+      "symbol": "nova",
+      "usage": "import"
+    },
+    {
+      "from": "src/nova/limit/local.py",
+      "fromLine": 25,
+      "reason": "module-not-found",
+      "symbol": "nova",
+      "usage": "import"
+    },
+    {
+      "from": "src/nova/limit/placement.py",
+      "fromLine": 20,
+      "reason": "module-not-found",
+      "symbol": "nova.conf",
+      "usage": "import"
+    },
+    {
+      "from": "src/nova/limit/placement.py",
+      "fromLine": 21,
+      "reason": "module-not-found",
+      "symbol": "nova",
+      "usage": "import"
+    },
+    {
+      "from": "src/nova/limit/placement.py",
+      "fromLine": 23,
+      "reason": "module-not-found",
+      "symbol": "nova",
+      "usage": "import"
+    },
+    {
+      "from": "src/nova/limit/placement.py",
+      "fromLine": 24,
+      "reason": "module-not-found",
+      "symbol": "nova",
+      "usage": "import"
+    },
+    {
+      "from": "src/nova/limit/placement.py",
+      "fromLine": 25,
+      "reason": "module-not-found",
+      "symbol": "nova.scheduler.client",
+      "usage": "import"
+    },
+    {
+      "from": "src/nova/limit/placement.py",
+      "fromLine": 26,
+      "reason": "module-not-found",
+      "symbol": "nova.scheduler",
+      "usage": "import"
+    },
+    {
+      "from": "src/nova/limit/utils.py",
+      "fromLine": 23,
+      "reason": "module-not-found",
+      "symbol": "nova.conf",
+      "usage": "import"
+    },
+    {
+      "from": "src/nova/limit/utils.py",
+      "fromLine": 24,
+      "reason": "module-not-found",
+      "symbol": "nova",
+      "usage": "import"
+    },
+    {
+      "from": "src/nova/servicegroup/api.py",
+      "fromLine": 22,
+      "reason": "module-not-found",
+      "symbol": "nova.conf",
+      "usage": "import"
+    },
+    {
+      "from": "src/nova/servicegroup/drivers/db.py",
+      "fromLine": 20,
+      "reason": "module-not-found",
+      "symbol": "nova.conf",
+      "usage": "import"
+    },
+    {
+      "from": "src/nova/servicegroup/drivers/db.py",
+      "fromLine": 21,
+      "reason": "module-not-found",
+      "symbol": "nova",
+      "usage": "import"
+    },
+    {
+      "from": "src/nova/servicegroup/drivers/db.py",
+      "fromLine": 22,
+      "reason": "module-not-found",
+      "symbol": "nova.i18n",
+      "usage": "import"
+    },
+    {
+      "from": "src/nova/servicegroup/drivers/mc.py",
+      "fromLine": 25,
+      "reason": "module-not-found",
+      "symbol": "nova",
+      "usage": "import"
+    },
+    {
+      "from": "src/nova/servicegroup/drivers/mc.py",
+      "fromLine": 26,
+      "reason": "module-not-found",
+      "symbol": "nova.conf",
+      "usage": "import"
+    },
+    {
+      "from": "src/nova/servicegroup/drivers/mc.py",
+      "fromLine": 27,
+      "reason": "module-not-found",
+      "symbol": "nova.i18n",
+      "usage": "import"
+    }
+  ],
+  "summary": {
+    "ambiguous": 0,
+    "crossComponentEdges": 0,
+    "externalImports": 25,
+    "fileEdges": 7,
+    "files": 12,
+    "resolved": 13,
+    "unresolved": 21,
+    "seams": 0
+  },
+  "warnings": [],
+  "crossComponentSeams": []
+}

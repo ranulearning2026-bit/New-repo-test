@@ -1,0 +1,67 @@
+{
+  "component": "limit",
+  "inputHash": "edef4ac5508ba72a",
+  "task": "Write one or two sentences on what this component is for, using only the facts below. No advice, no claims beyond the data.",
+  "files": [
+    {
+      "file": "src/nova/limit/placement.py",
+      "codeLines": 164,
+      "topLevelSymbols": [
+        "function _get_placement_usages",
+        "function _get_usage",
+        "function _get_deltas",
+        "function _get_enforcer",
+        "function enforce_num_instances_and_resources",
+        "function _convert_keys_to_legacy_name",
+        "function get_legacy_default_limits",
+        "function get_legacy_project_limits",
+        "function get_legacy_counts"
+      ],
+      "documentOverview": ""
+    },
+    {
+      "file": "src/nova/limit/local.py",
+      "codeLines": 162,
+      "topLevelSymbols": [
+        "function get_in_use",
+        "function always_zero_usage",
+        "function enforce_api_limit",
+        "function enforce_db_limit",
+        "function _convert_keys_to_legacy_name",
+        "function get_legacy_default_limits",
+        "function _keypair_count",
+        "function _server_group_count",
+        "function _server_group_members_count"
+      ],
+      "documentOverview": ""
+    },
+    {
+      "file": "src/nova/limit/utils.py",
+      "codeLines": 96,
+      "topLevelSymbols": [
+        "function use_unified_limits",
+        "class IdentityClient",
+        "function _identity_client",
+        "function should_enforce"
+      ],
+      "documentOverview": ""
+    },
+    {
+      "file": "src/nova/limit/__init__.py",
+      "codeLines": 0,
+      "topLevelSymbols": [],
+      "documentOverview": ""
+    }
+  ],
+  "topPackages": [
+    "nova",
+    "oslo_limit",
+    "oslo_log",
+    "typing",
+    "functools",
+    "openstack",
+    "os_resource_classes"
+  ],
+  "callsOut": {},
+  "calledBy": {}
+}

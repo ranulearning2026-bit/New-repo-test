@@ -1,0 +1,203 @@
+{
+  "components": [
+    "keymgr",
+    "limit",
+    "servicegroup"
+  ],
+  "generatedAt": "2026-11-26T09:45:57Z",
+  "params": {
+    "dataFanoutCap": 8,
+    "dataWeight": 1,
+    "maxUnit": 40,
+    "minDetect": 12
+  },
+  "units": [
+    {
+      "component": "keymgr",
+      "externalEdges": [],
+      "files": [
+        "src/nova/keymgr/conf_key_mgr.py"
+      ],
+      "internalEdges": [],
+      "memberCount": 10,
+      "members": [
+        "src/nova/keymgr/conf_key_mgr.py#ConfKeyManager@L49",
+        "src/nova/keymgr/conf_key_mgr.py#__init__@L57",
+        "src/nova/keymgr/conf_key_mgr.py#_get_key@L71",
+        "src/nova/keymgr/conf_key_mgr.py#add_consumer@L133",
+        "src/nova/keymgr/conf_key_mgr.py#create_key@L75",
+        "src/nova/keymgr/conf_key_mgr.py#create_key_pair@L87",
+        "src/nova/keymgr/conf_key_mgr.py#delete@L117",
+        "src/nova/keymgr/conf_key_mgr.py#get@L102",
+        "src/nova/keymgr/conf_key_mgr.py#remove_consumer@L138",
+        "src/nova/keymgr/conf_key_mgr.py#store@L91"
+      ],
+      "unitId": "keymgr:u01"
+    },
+    {
+      "component": "limit",
+      "externalEdges": [],
+      "files": [
+        "src/nova/limit/local.py",
+        "src/nova/limit/placement.py",
+        "src/nova/limit/utils.py"
+      ],
+      "internalEdges": [],
+      "memberCount": 20,
+      "members": [
+        "src/nova/limit/local.py#_convert_keys_to_legacy_name@L198",
+        "src/nova/limit/local.py#_keypair_count@L215",
+        "src/nova/limit/local.py#_server_group_count@L220",
+        "src/nova/limit/local.py#_server_group_members_count@L225",
+        "src/nova/limit/local.py#always_zero_usage@L109",
+        "src/nova/limit/local.py#enforce_db_limit@L148",
+        "src/nova/limit/local.py#get_in_use@L82",
+        "src/nova/limit/local.py#get_legacy_default_limits@L208",
+        "src/nova/limit/placement.py#_convert_keys_to_legacy_name@L215",
+        "src/nova/limit/placement.py#_get_deltas@L116",
+        "src/nova/limit/placement.py#_get_enforcer@L142",
+        "src/nova/limit/placement.py#_get_placement_usages@L38",
+        "src/nova/limit/placement.py#callback@L146",
+        "src/nova/limit/placement.py#get_legacy_counts@L235",
+        "src/nova/limit/placement.py#get_legacy_default_limits@L223",
+        "src/nova/limit/placement.py#get_legacy_project_limits@L229",
+        "src/nova/limit/utils.py#IdentityClient@L37",
+        "src/nova/limit/utils.py#__init__@L42",
+        "src/nova/limit/utils.py#_identity_client@L52",
+        "src/nova/limit/utils.py#registered_limits@L47"
+      ],
+      "unitId": "limit:u01"
+    },
+    {
+      "component": "limit",
+      "externalEdges": [],
+      "files": [
+        "src/nova/limit/local.py",
+        "src/nova/limit/placement.py",
+        "src/nova/limit/utils.py"
+      ],
+      "internalEdges": [
+        {
+          "a": "src/nova/limit/local.py#enforce_api_limit@L118",
+          "b": "src/nova/limit/utils.py#should_enforce@L91",
+          "kinds": [
+            "call"
+          ],
+          "weight": 1
+        },
+        {
+          "a": "src/nova/limit/local.py#enforce_api_limit@L118",
+          "b": "src/nova/limit/utils.py#use_unified_limits@L33",
+          "kinds": [
+            "call"
+          ],
+          "weight": 1
+        },
+        {
+          "a": "src/nova/limit/placement.py#_get_usage@L45",
+          "b": "src/nova/limit/utils.py#use_unified_limits@L33",
+          "kinds": [
+            "call"
+          ],
+          "weight": 1
+        },
+        {
+          "a": "src/nova/limit/placement.py#enforce_num_instances_and_resources@L152",
+          "b": "src/nova/limit/utils.py#should_enforce@L91",
+          "kinds": [
+            "call"
+          ],
+          "weight": 1
+        }
+      ],
+      "memberCount": 5,
+      "members": [
+        "src/nova/limit/local.py#enforce_api_limit@L118",
+        "src/nova/limit/placement.py#_get_usage@L45",
+        "src/nova/limit/placement.py#enforce_num_instances_and_resources@L152",
+        "src/nova/limit/utils.py#should_enforce@L91",
+        "src/nova/limit/utils.py#use_unified_limits@L33"
+      ],
+      "unitId": "limit:u02"
+    },
+    {
+      "component": "servicegroup",
+      "externalEdges": [],
+      "files": [
+        "src/nova/servicegroup/api.py",
+        "src/nova/servicegroup/drivers/base.py",
+        "src/nova/servicegroup/drivers/db.py",
+        "src/nova/servicegroup/drivers/mc.py"
+      ],
+      "internalEdges": [],
+      "memberCount": 18,
+      "members": [
+        "src/nova/servicegroup/api.py#API@L37",
+        "src/nova/servicegroup/api.py#__init__@L39",
+        "src/nova/servicegroup/api.py#get_updated_time@L81",
+        "src/nova/servicegroup/api.py#join@L63",
+        "src/nova/servicegroup/api.py#service_is_up@L72",
+        "src/nova/servicegroup/drivers/base.py#is_up@L27",
+        "src/nova/servicegroup/drivers/base.py#join@L18",
+        "src/nova/servicegroup/drivers/base.py#updated_time@L31",
+        "src/nova/servicegroup/drivers/db.py#__init__@L34",
+        "src/nova/servicegroup/drivers/db.py#_report_state@L87",
+        "src/nova/servicegroup/drivers/db.py#is_up@L57",
+        "src/nova/servicegroup/drivers/db.py#join@L37",
+        "src/nova/servicegroup/drivers/db.py#updated_time@L83",
+        "src/nova/servicegroup/drivers/mc.py#__init__@L40",
+        "src/nova/servicegroup/drivers/mc.py#_report_state@L92",
+        "src/nova/servicegroup/drivers/mc.py#is_up@L62",
+        "src/nova/servicegroup/drivers/mc.py#join@L44",
+        "src/nova/servicegroup/drivers/mc.py#updated_time@L73"
+      ],
+      "unitId": "servicegroup:u01"
+    },
+    {
+      "component": "servicegroup",
+      "externalEdges": [],
+      "files": [
+        "src/nova/servicegroup/drivers/base.py",
+        "src/nova/servicegroup/drivers/db.py",
+        "src/nova/servicegroup/drivers/mc.py"
+      ],
+      "internalEdges": [
+        {
+          "a": "src/nova/servicegroup/drivers/base.py#Driver@L15",
+          "b": "src/nova/servicegroup/drivers/db.py#DbDriver@L32",
+          "kinds": [
+            "inherit"
+          ],
+          "weight": 1
+        },
+        {
+          "a": "src/nova/servicegroup/drivers/base.py#Driver@L15",
+          "b": "src/nova/servicegroup/drivers/mc.py#MemcachedDriver@L38",
+          "kinds": [
+            "inherit"
+          ],
+          "weight": 1
+        },
+        {
+          "a": "src/nova/servicegroup/drivers/db.py#DbDriver@L32",
+          "b": "src/nova/servicegroup/drivers/mc.py#MemcachedDriver@L38",
+          "kinds": [
+            "shared-data"
+          ],
+          "weight": 1
+        }
+      ],
+      "memberCount": 3,
+      "members": [
+        "src/nova/servicegroup/drivers/base.py#Driver@L15",
+        "src/nova/servicegroup/drivers/db.py#DbDriver@L32",
+        "src/nova/servicegroup/drivers/mc.py#MemcachedDriver@L38"
+      ],
+      "unitId": "servicegroup:u02"
+    }
+  ],
+  "warnings": [
+    "dropped 7 resolved edge(s): usage",
+    "added 1 shared-data coupling edge(s) across 1 shared target(s)"
+  ]
+}

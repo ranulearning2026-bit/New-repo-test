@@ -1,0 +1,252 @@
+{
+  "generatedAt": "2026-11-26T09:46:28Z",
+  "batch": "76db4114ac412837a25751b066b165cd1308d439",
+  "thresholds": {
+    "ccn": 15,
+    "function_lines": 100,
+    "params": 6,
+    "nesting": 4,
+    "file_lines": 1000
+  },
+  "ruleGroups": [
+    {
+      "id": "R01",
+      "rule": "ruff:EXE002",
+      "count": 12,
+      "files": 12,
+      "toolSeverity": "warning",
+      "ids": [
+        "src/nova/keymgr/__init__.py#T1",
+        "src/nova/keymgr/conf_key_mgr.py#T1",
+        "src/nova/limit/__init__.py#T1",
+        "src/nova/limit/local.py#T2",
+        "src/nova/limit/placement.py#T2",
+        "src/nova/limit/utils.py#T2",
+        "src/nova/servicegroup/__init__.py#T1",
+        "src/nova/servicegroup/api.py#T1",
+        "src/nova/servicegroup/drivers/__init__.py#T1",
+        "src/nova/servicegroup/drivers/base.py#T2",
+        "src/nova/servicegroup/drivers/db.py#T2",
+        "src/nova/servicegroup/drivers/mc.py#T3"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "file": "src/nova/keymgr/__init__.py",
+      "language": "python",
+      "role": "source",
+      "analyze": true,
+      "lines": 0,
+      "toolsRun": [
+        "ruff",
+        "pylint",
+        "cpd",
+        "lizard"
+      ],
+      "toolsMissing": [],
+      "maxCcn": null,
+      "toolCandidates": 1,
+      "metricCandidates": 0,
+      "candidatesPath": ".aee/quality-work/candidates/src/nova/keymgr/__init__.py.json"
+    },
+    {
+      "file": "src/nova/keymgr/conf_key_mgr.py",
+      "language": "python",
+      "role": "source",
+      "analyze": true,
+      "lines": 100,
+      "toolsRun": [
+        "ruff",
+        "pylint",
+        "cpd",
+        "lizard"
+      ],
+      "toolsMissing": [],
+      "maxCcn": 3,
+      "toolCandidates": 6,
+      "metricCandidates": 0,
+      "candidatesPath": ".aee/quality-work/candidates/src/nova/keymgr/conf_key_mgr.py.json"
+    },
+    {
+      "file": "src/nova/limit/__init__.py",
+      "language": "python",
+      "role": "source",
+      "analyze": true,
+      "lines": 0,
+      "toolsRun": [
+        "ruff",
+        "pylint",
+        "cpd",
+        "lizard"
+      ],
+      "toolsMissing": [],
+      "maxCcn": null,
+      "toolCandidates": 1,
+      "metricCandidates": 0,
+      "candidatesPath": ".aee/quality-work/candidates/src/nova/limit/__init__.py.json"
+    },
+    {
+      "file": "src/nova/limit/local.py",
+      "language": "python",
+      "role": "source",
+      "analyze": true,
+      "lines": 167,
+      "toolsRun": [
+        "ruff",
+        "pylint",
+        "cpd",
+        "lizard"
+      ],
+      "toolsMissing": [],
+      "maxCcn": 7,
+      "toolCandidates": 10,
+      "metricCandidates": 1,
+      "candidatesPath": ".aee/quality-work/candidates/src/nova/limit/local.py.json"
+    },
+    {
+      "file": "src/nova/limit/placement.py",
+      "language": "python",
+      "role": "source",
+      "analyze": true,
+      "lines": 167,
+      "toolsRun": [
+        "ruff",
+        "pylint",
+        "cpd",
+        "lizard"
+      ],
+      "toolsMissing": [],
+      "maxCcn": 16,
+      "toolCandidates": 12,
+      "metricCandidates": 4,
+      "candidatesPath": ".aee/quality-work/candidates/src/nova/limit/placement.py.json"
+    },
+    {
+      "file": "src/nova/limit/utils.py",
+      "language": "python",
+      "role": "source",
+      "analyze": true,
+      "lines": 98,
+      "toolsRun": [
+        "ruff",
+        "pylint",
+        "cpd",
+        "lizard"
+      ],
+      "toolsMissing": [],
+      "maxCcn": 12,
+      "toolCandidates": 9,
+      "metricCandidates": 2,
+      "candidatesPath": ".aee/quality-work/candidates/src/nova/limit/utils.py.json"
+    },
+    {
+      "file": "src/nova/servicegroup/__init__.py",
+      "language": "python",
+      "role": "source",
+      "analyze": true,
+      "lines": 6,
+      "toolsRun": [
+        "ruff",
+        "pylint",
+        "cpd",
+        "lizard"
+      ],
+      "toolsMissing": [],
+      "maxCcn": null,
+      "toolCandidates": 1,
+      "metricCandidates": 0,
+      "candidatesPath": ".aee/quality-work/candidates/src/nova/servicegroup/__init__.py.json"
+    },
+    {
+      "file": "src/nova/servicegroup/api.py",
+      "language": "python",
+      "role": "source",
+      "analyze": true,
+      "lines": 49,
+      "toolsRun": [
+        "ruff",
+        "pylint",
+        "cpd",
+        "lizard"
+      ],
+      "toolsMissing": [],
+      "maxCcn": 2,
+      "toolCandidates": 5,
+      "metricCandidates": 0,
+      "candidatesPath": ".aee/quality-work/candidates/src/nova/servicegroup/api.py.json"
+    },
+    {
+      "file": "src/nova/servicegroup/drivers/__init__.py",
+      "language": "python",
+      "role": "source",
+      "analyze": true,
+      "lines": 0,
+      "toolsRun": [
+        "ruff",
+        "pylint",
+        "cpd",
+        "lizard"
+      ],
+      "toolsMissing": [],
+      "maxCcn": null,
+      "toolCandidates": 1,
+      "metricCandidates": 0,
+      "candidatesPath": ".aee/quality-work/candidates/src/nova/servicegroup/drivers/__init__.py.json"
+    },
+    {
+      "file": "src/nova/servicegroup/drivers/base.py",
+      "language": "python",
+      "role": "source",
+      "analyze": true,
+      "lines": 16,
+      "toolsRun": [
+        "ruff",
+        "pylint",
+        "cpd",
+        "lizard"
+      ],
+      "toolsMissing": [],
+      "maxCcn": 1,
+      "toolCandidates": 4,
+      "metricCandidates": 0,
+      "candidatesPath": ".aee/quality-work/candidates/src/nova/servicegroup/drivers/base.py.json"
+    },
+    {
+      "file": "src/nova/servicegroup/drivers/db.py",
+      "language": "python",
+      "role": "source",
+      "analyze": true,
+      "lines": 79,
+      "toolsRun": [
+        "ruff",
+        "pylint",
+        "cpd",
+        "lizard"
+      ],
+      "toolsMissing": [],
+      "maxCcn": 6,
+      "toolCandidates": 6,
+      "metricCandidates": 0,
+      "candidatesPath": ".aee/quality-work/candidates/src/nova/servicegroup/drivers/db.py.json"
+    },
+    {
+      "file": "src/nova/servicegroup/drivers/mc.py",
+      "language": "python",
+      "role": "source",
+      "analyze": true,
+      "lines": 70,
+      "toolsRun": [
+        "ruff",
+        "pylint",
+        "cpd",
+        "lizard"
+      ],
+      "toolsMissing": [],
+      "maxCcn": 4,
+      "toolCandidates": 9,
+      "metricCandidates": 0,
+      "candidatesPath": ".aee/quality-work/candidates/src/nova/servicegroup/drivers/mc.py.json"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-11-26T09:46:28Z",
+  "tools": {
+    "ruff": {
+      "status": "OK",
+      "detail": "",
+      "version": "0.17.6",
+      "config": "default"
+    },
+    "pylint": {
+      "status": "OK",
+      "detail": "",
+      "version": "4.1.4",
+      "config": "default"
+    },
+    "cpd": {
+      "status": "OK",
+      "detail": "",
+      "version": "7.7.0",
+      "config": "minimum-tokens 100"
+    },
+    "lizard": {
+      "status": "OK",
+      "detail": "",
+      "version": "1.26.1",
+      "config": "default"
+    }
+  }
+}

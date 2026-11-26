@@ -1,0 +1,29 @@
+{
+  "component": "keymgr",
+  "inputHash": "f05bef5c54ab1069",
+  "task": "Write one or two sentences on what this component is for, using only the facts below. No advice, no claims beyond the data.",
+  "files": [
+    {
+      "file": "src/nova/keymgr/conf_key_mgr.py",
+      "codeLines": 95,
+      "topLevelSymbols": [
+        "class ConfKeyManager"
+      ],
+      "documentOverview": ""
+    },
+    {
+      "file": "src/nova/keymgr/__init__.py",
+      "codeLines": 0,
+      "topLevelSymbols": [],
+      "documentOverview": ""
+    }
+  ],
+  "topPackages": [
+    "binascii",
+    "castellan",
+    "nova",
+    "oslo_log"
+  ],
+  "callsOut": {},
+  "calledBy": {}
+}

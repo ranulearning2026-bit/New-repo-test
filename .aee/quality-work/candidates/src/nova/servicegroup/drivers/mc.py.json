@@ -1,0 +1,280 @@
+{
+  "file": "src/nova/servicegroup/drivers/mc.py",
+  "language": "python",
+  "role": "source",
+  "toolsRun": [
+    "ruff",
+    "pylint",
+    "cpd",
+    "lizard"
+  ],
+  "toolsMissing": [],
+  "thresholds": {
+    "ccn": 15,
+    "function_lines": 100,
+    "params": 6,
+    "nesting": 4,
+    "file_lines": 1000
+  },
+  "toolCandidates": [
+    {
+      "canonical": "pylint:C0114",
+      "tools": [
+        "pylint"
+      ],
+      "ruleIds": [
+        "C0114"
+      ],
+      "line": 1,
+      "endLine": 1,
+      "message": "Missing module docstring",
+      "toolSeverity": "info",
+      "count": 1,
+      "occurrences": [
+        {
+          "line": 1,
+          "endLine": 1
+        }
+      ],
+      "id": "T1"
+    },
+    {
+      "canonical": "pylint:R0801",
+      "tools": [
+        "pylint"
+      ],
+      "ruleIds": [
+        "R0801"
+      ],
+      "line": 1,
+      "endLine": 1,
+      "message": "Similar lines in 2 files\n==limit.local:[200:215]\n==limit.placement:[215:229]\n    legacy = {}\n    for new_name, old_name in LEGACY_LIMITS.items():\n        # defensive in case oslo or keystone doesn't give us an answer\n        legacy[old_name] = new_dict.get(new_name) or 0\n    return legacy\n\n\ndef get_legacy_default_limits() -> dict[str, int]:\n    # TODO(johngarbutt): need oslo.limit API for this, it should do caching\n    enforcer = limit.Enforcer(lambda: None)\n    new_limits = enforcer.get_registered_limits(LEGACY_LIMITS.keys())\n    return _convert_keys_to_legacy_name(dict(new_limits))\n\n\ndef _keypair_count(context, user_id, *args):",
+      "toolSeverity": "warning",
+      "count": 2,
+      "occurrences": [
+        {
+          "line": 1,
+          "endLine": 1
+        }
+      ],
+      "id": "T2"
+    },
+    {
+      "canonical": "ruff:EXE002",
+      "tools": [
+        "ruff"
+      ],
+      "ruleIds": [
+        "EXE002"
+      ],
+      "line": 1,
+      "endLine": 1,
+      "message": "The file is executable but no shebang is present",
+      "toolSeverity": "warning",
+      "count": 1,
+      "occurrences": [
+        {
+          "line": 1,
+          "endLine": 1
+        }
+      ],
+      "id": "T3",
+      "ruleGroup": "R01"
+    },
+    {
+      "canonical": "ruff:I001",
+      "tools": [
+        "ruff"
+      ],
+      "ruleIds": [
+        "I001"
+      ],
+      "line": 20,
+      "endLine": 29,
+      "message": "Import block is un-sorted or un-formatted",
+      "toolSeverity": "warning",
+      "count": 1,
+      "occurrences": [
+        {
+          "line": 20,
+          "endLine": 29
+        }
+      ],
+      "id": "T4"
+    },
+    {
+      "canonical": "pylint:C0115",
+      "tools": [
+        "pylint"
+      ],
+      "ruleIds": [
+        "C0115"
+      ],
+      "line": 38,
+      "endLine": 38,
+      "message": "Missing class docstring",
+      "toolSeverity": "info",
+      "count": 1,
+      "occurrences": [
+        {
+          "line": 38,
+          "endLine": 38
+        }
+      ],
+      "id": "T5"
+    },
+    {
+      "canonical": "pylint:W0613",
+      "tools": [
+        "pylint"
+      ],
+      "ruleIds": [
+        "W0613"
+      ],
+      "line": 40,
+      "endLine": 40,
+      "message": "Unused argument 'args'",
+      "toolSeverity": "warning",
+      "count": 2,
+      "occurrences": [
+        {
+          "line": 40,
+          "endLine": 40
+        }
+      ],
+      "id": "T6"
+    },
+    {
+      "canonical": "pylint:C0209",
+      "tools": [
+        "pylint"
+      ],
+      "ruleIds": [
+        "C0209"
+      ],
+      "line": 66,
+      "endLine": 66,
+      "message": "Formatting a regular string which could be an f-string",
+      "toolSeverity": "info",
+      "count": 3,
+      "occurrences": [
+        {
+          "line": 66,
+          "endLine": 66
+        },
+        {
+          "line": 75,
+          "endLine": 75
+        },
+        {
+          "line": 95,
+          "endLine": 95
+        }
+      ],
+      "id": "T7"
+    },
+    {
+      "canonical": "ruff:UP031",
+      "tools": [
+        "ruff"
+      ],
+      "ruleIds": [
+        "UP031"
+      ],
+      "line": 66,
+      "endLine": 66,
+      "message": "Use format specifiers instead of percent format",
+      "toolSeverity": "warning",
+      "count": 3,
+      "occurrences": [
+        {
+          "line": 66,
+          "endLine": 66
+        },
+        {
+          "line": 75,
+          "endLine": 75
+        },
+        {
+          "line": 95,
+          "endLine": 95
+        }
+      ],
+      "id": "T8"
+    },
+    {
+      "canonical": "broad-except",
+      "tools": [
+        "pylint",
+        "ruff"
+      ],
+      "ruleIds": [
+        "BLE001",
+        "W0718"
+      ],
+      "line": 111,
+      "endLine": 111,
+      "message": "Catching too general exception Exception",
+      "toolSeverity": "warning",
+      "count": 1,
+      "occurrences": [
+        {
+          "line": 111,
+          "endLine": 111
+        }
+      ],
+      "id": "T9"
+    }
+  ],
+  "metricCandidates": [],
+  "functions": [
+    {
+      "function": "__init__",
+      "startLine": 40,
+      "endLine": 42,
+      "ccn": 1,
+      "nloc": 3,
+      "params": 3,
+      "maxNesting": 0
+    },
+    {
+      "function": "join",
+      "startLine": 44,
+      "endLine": 60,
+      "ccn": 3,
+      "nloc": 15,
+      "params": 4,
+      "maxNesting": 2
+    },
+    {
+      "function": "is_up",
+      "startLine": 62,
+      "endLine": 71,
+      "ccn": 2,
+      "nloc": 6,
+      "params": 2,
+      "maxNesting": 1
+    },
+    {
+      "function": "updated_time",
+      "startLine": 73,
+      "endLine": 90,
+      "ccn": 4,
+      "nloc": 11,
+      "params": 2,
+      "maxNesting": 2
+    },
+    {
+      "function": "_report_state",
+      "startLine": 92,
+      "endLine": 117,
+      "ccn": 4,
+      "nloc": 18,
+      "params": 2,
+      "maxNesting": 3
+    }
+  ],
+  "dropped": {
+    "env_noise": 7
+  }
+}

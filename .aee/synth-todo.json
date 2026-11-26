@@ -1,0 +1,7 @@
+{
+  "purposesNeeded": [
+    "keymgr",
+    "limit",
+    "servicegroup"
+  ]
+}

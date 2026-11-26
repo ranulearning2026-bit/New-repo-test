@@ -1,0 +1,63 @@
+toolchain:   secscan (versions fixed in the image)
+gitleaks     8.21.2
+semgrep      1.186.0
+bandit       bandit 1.9.4
+spotbugs     
+checkov      3.4.7
+trivy        Version: 0.76.1
+conftest     Conftest: 0.56.0
+osv-scanner  osv-scanner version: 1.9.2
+syft         1.18.1
+ruff         ruff 0.17.6
+pylint       pylint 4.1.4
+tox          4.67.16
+shellcheck   0.10.0
+hadolint     Haskell Dockerfile Linter 2.12.0
+pmd          pmd-core-7.7.0
+checkstyle   Checkstyle version: 10.20.1
+tokei        tokei 12.1.2 compiled with serialization support: json
+repomix      1.19.0
+ctags        Universal Ctags 5.9.0, Copyright (C) 2015 Universal Ctags Team
+lizard       1.26.1
+aee-inventory ok (tree-sitter grammars load)
+aee-link     ok
+aee-seams    ok
+findsecbugs  findsecbugs-plugin-1.13.0
+.aee/changed-files.json: 12 files (76db4114)
+[OK] repo-checker
+batch 76db4114: 12 ledger lines, 12 not skipped
+[OK] file-intake-classifier
+12 KB records written, 0 unparseable
+[OK] fact-extractor
+[OK] extract stage finished: File Documenter, Security Analyzer, Code Quality Analyzer and Relationship Linker can start
+=== Relationship Linker ===
+Step 2: Checking prerequisites...
+Step 3: Running toolchain doctor...
+Building file graph with aee-link...
+Step 4: Finding seams...
+Scanning source folder: src/nova/
+Step 5: Assembling link-graph.json...
+Steps 6 and 8: Verifying the graph and writing link-summary.md...
+.aee/link-summary.md: written
+=== Link stage completed ===
+=== Cluster stage ===
+aee-cluster: 5 candidate unit(s) -> .aee/functional-units.json
+=== Cluster stage completed ===
+=== Security pre-stage ===
+Step 2: Checking prerequisites...
+Step 3: Running the scanners and normalising their output...
+12 files scanned (0 skipped), 0 candidates; scanners: gitleaks=ok, semgrep=ok, bandit=ok
+=== Done: the Security Analyzer reads .aee/security-work/candidates.json and fills in .aee/security/ ===
+=== Quality pre-stage ===
+Step 2: Checking prerequisites...
+Step 3: Running the linters and metrics and normalising their output...
+12 files analysed (0 skipped), 72 candidates; tools: ruff=OK, pylint=OK, cpd=OK, lizard=OK
+=== Done: the Code Quality Analyzer reads .aee/quality-work/files.json and fills in .aee/quality/ ===
+=== Synthesizer ===
+Step 2: Checking prerequisites...
+Step 3: Generating the component documents...
+8 files written; purposes needed for 3 components
+Agent hand-off: a purpose sentence is needed for: keymgr limit servicegroup
+  inputs: .aee/synth-inputs/<component>.json   output: .aee/purposes.json
+=== Synthesize stage completed ===
+FRONT END DONE

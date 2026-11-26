@@ -1,0 +1,56 @@
+{
+  "branch": "agent_workspace",
+  "sourceFolder": "src/nova/",
+  "beforeSha": null,
+  "afterSha": "76db4114ac412837a25751b066b165cd1308d439",
+  "files": [
+    {
+      "path": "src/nova/keymgr/__init__.py",
+      "status": "added"
+    },
+    {
+      "path": "src/nova/keymgr/conf_key_mgr.py",
+      "status": "added"
+    },
+    {
+      "path": "src/nova/limit/__init__.py",
+      "status": "added"
+    },
+    {
+      "path": "src/nova/limit/local.py",
+      "status": "added"
+    },
+    {
+      "path": "src/nova/limit/placement.py",
+      "status": "added"
+    },
+    {
+      "path": "src/nova/limit/utils.py",
+      "status": "added"
+    },
+    {
+      "path": "src/nova/servicegroup/__init__.py",
+      "status": "added"
+    },
+    {
+      "path": "src/nova/servicegroup/api.py",
+      "status": "added"
+    },
+    {
+      "path": "src/nova/servicegroup/drivers/__init__.py",
+      "status": "added"
+    },
+    {
+      "path": "src/nova/servicegroup/drivers/base.py",
+      "status": "added"
+    },
+    {
+      "path": "src/nova/servicegroup/drivers/db.py",
+      "status": "added"
+    },
+    {
+      "path": "src/nova/servicegroup/drivers/mc.py",
+      "status": "added"
+    }
+  ]
+}

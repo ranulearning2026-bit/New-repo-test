@@ -1,0 +1,78 @@
+{
+  "generatedAt": "2026-11-26T09:46:17Z",
+  "batch": "76db4114ac412837a25751b066b165cd1308d439",
+  "files": [
+    {
+      "file": "src/nova/keymgr/__init__.py",
+      "language": "python",
+      "kbPath": ".aee/kb/src/nova/keymgr/__init__.py.json",
+      "analyze": true
+    },
+    {
+      "file": "src/nova/keymgr/conf_key_mgr.py",
+      "language": "python",
+      "kbPath": ".aee/kb/src/nova/keymgr/conf_key_mgr.py.json",
+      "analyze": true
+    },
+    {
+      "file": "src/nova/limit/__init__.py",
+      "language": "python",
+      "kbPath": ".aee/kb/src/nova/limit/__init__.py.json",
+      "analyze": true
+    },
+    {
+      "file": "src/nova/limit/local.py",
+      "language": "python",
+      "kbPath": ".aee/kb/src/nova/limit/local.py.json",
+      "analyze": true
+    },
+    {
+      "file": "src/nova/limit/placement.py",
+      "language": "python",
+      "kbPath": ".aee/kb/src/nova/limit/placement.py.json",
+      "analyze": true
+    },
+    {
+      "file": "src/nova/limit/utils.py",
+      "language": "python",
+      "kbPath": ".aee/kb/src/nova/limit/utils.py.json",
+      "analyze": true
+    },
+    {
+      "file": "src/nova/servicegroup/__init__.py",
+      "language": "python",
+      "kbPath": ".aee/kb/src/nova/servicegroup/__init__.py.json",
+      "analyze": true
+    },
+    {
+      "file": "src/nova/servicegroup/api.py",
+      "language": "python",
+      "kbPath": ".aee/kb/src/nova/servicegroup/api.py.json",
+      "analyze": true
+    },
+    {
+      "file": "src/nova/servicegroup/drivers/__init__.py",
+      "language": "python",
+      "kbPath": ".aee/kb/src/nova/servicegroup/drivers/__init__.py.json",
+      "analyze": true
+    },
+    {
+      "file": "src/nova/servicegroup/drivers/base.py",
+      "language": "python",
+      "kbPath": ".aee/kb/src/nova/servicegroup/drivers/base.py.json",
+      "analyze": true
+    },
+    {
+      "file": "src/nova/servicegroup/drivers/db.py",
+      "language": "python",
+      "kbPath": ".aee/kb/src/nova/servicegroup/drivers/db.py.json",
+      "analyze": true
+    },
+    {
+      "file": "src/nova/servicegroup/drivers/mc.py",
+      "language": "python",
+      "kbPath": ".aee/kb/src/nova/servicegroup/drivers/mc.py.json",
+      "analyze": true
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "keymgr": [
+    "src/nova/keymgr/"
+  ],
+  "limit": [
+    "src/nova/limit/"
+  ],
+  "servicegroup": [
+    "src/nova/servicegroup/"
+  ]
+}
