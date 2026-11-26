@@ -1,0 +1,11 @@
+{
+  "round": 1,
+  "verdict": "approve",
+  "reviewed": {
+    "candidates": 0,
+    "findings": 0,
+    "drops": 0,
+    "gaps": 0
+  },
+  "issues": []
+}
