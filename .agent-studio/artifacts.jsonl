@@ -25,3 +25,5 @@
 {"artifact": "Security Log", "path": ".aee/security-log.jsonl", "by": "new-pipeline-security-reviewer", "commit": "c7497dc", "ts": "2026-11-26T11:36:50Z"}
 {"artifact": "Security Chains", "path": ".aee/security-chains.json", "by": "new-pipeline-cross-file-security-correlator", "commit": "c7497dc", "ts": "2026-11-26T11:38:15Z"}
 {"artifact": "Security Chains Summary", "path": ".aee/security-chains-summary.md", "by": "new-pipeline-cross-file-security-correlator", "commit": "c7497dc", "ts": "2026-11-26T11:38:15Z"}
+{"artifact": "License Inventory", "path": ".aee/license-inventory.json", "by": "new-pipeline-license-compliance-analyzer", "commit": "c7497dc", "ts": "2026-11-26T11:39:16Z"}
+{"artifact": "License Summary", "path": ".aee/license-summary.md", "by": "new-pipeline-license-compliance-analyzer", "commit": "c7497dc", "ts": "2026-11-26T11:39:19Z"}
