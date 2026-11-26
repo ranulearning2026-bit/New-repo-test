@@ -40,3 +40,6 @@
 {"artifact": "Extract Log", "path": ".aee/extract-log.jsonl", "by": "new-pipeline-verifier-critic", "commit": "a57e445", "ts": "2026-11-26T11:55:33Z"}
 {"artifact": "Verification Report", "path": ".aee/verification-report.json", "by": "new-pipeline-verifier-critic", "commit": "a57e445", "ts": "2026-11-26T12:01:01Z"}
 {"artifact": "Verification Summary", "path": ".aee/verification-summary.md", "by": "new-pipeline-verifier-critic", "commit": "a57e445", "ts": "2026-11-26T12:01:02Z"}
+{"artifact": "Verification Summary", "path": ".aee/verification-summary.md", "by": "new-pipeline-security-reporter", "commit": "4b5f359", "ts": "2026-11-26T12:05:27Z"}
+{"artifact": "Verification Report", "path": ".aee/verification-report.json", "by": "new-pipeline-security-reporter", "commit": "4b5f359", "ts": "2026-11-26T12:05:27Z"}
+{"artifact": "Security Report", "path": "docs/reports/security-report.md", "by": "new-pipeline-security-reporter", "commit": "4b5f359", "ts": "2026-11-26T12:06:22Z"}
