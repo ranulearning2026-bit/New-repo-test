@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "file": "src/nova/servicegroup/api.py",
+    "tool": "pylint",
+    "ruleId": "C0115",
+    "lineRange": {
+      "start": 37,
+      "end": 37
+    },
+    "title": "Class API lacks a docstring",
+    "detail": "The servicegroup API class has no class docstring despite being the primary public interface for service group management. Add a docstring describing the driver dispatch model and the INITIAL_REPORTING_DELAY behaviour.",
+    "category": "documentation",
+    "severity": "low",
+    "confidence": "confirmed"
+  }
+]

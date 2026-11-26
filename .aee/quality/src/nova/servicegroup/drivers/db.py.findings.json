@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "file": "src/nova/servicegroup/drivers/db.py",
+    "tool": "pylint",
+    "ruleId": "C0115",
+    "lineRange": {
+      "start": 32,
+      "end": 32
+    },
+    "title": "Class DbDriver lacks a docstring",
+    "detail": "DbDriver is a concrete servicegroup driver with no class docstring. Add a brief description of the database-backed heartbeat mechanism and the _report_state callback.",
+    "category": "documentation",
+    "severity": "low",
+    "confidence": "confirmed"
+  },
+  {
+    "file": "src/nova/servicegroup/drivers/db.py",
+    "tool": "pylint",
+    "ruleId": "W0718",
+    "lineRange": {
+      "start": 117,
+      "end": 117
+    },
+    "title": "Broad 'except Exception' in _report_state can silently swallow unexpected errors",
+    "detail": "Line 117 catches all Exceptions during periodic service state reporting. Unexpected errors (network, DB failures) may only be logged and swallowed, so a misbehaving service can continue without its state being recorded. Narrow the except clause to known exception types or re-raise after logging.",
+    "category": "error-handling",
+    "severity": "medium",
+    "confidence": "confirmed"
+  }
+]

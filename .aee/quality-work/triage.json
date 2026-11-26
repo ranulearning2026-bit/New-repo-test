@@ -1,0 +1,451 @@
+{
+  "addressedVerdictRound": 0,
+  "files": {
+    "src/nova/keymgr/__init__.py": {
+      "candidates": [
+        {
+          "id": "T1",
+          "action": "drop",
+          "reason": "EXE002 in group R01 \u2014 Python package module with executable bit set but no shebang needed; formatting-only, no maintainability impact"
+        }
+      ]
+    },
+    "src/nova/keymgr/conf_key_mgr.py": {
+      "candidates": [
+        {
+          "id": "T1",
+          "action": "drop",
+          "reason": "EXE002 in group R01 \u2014 Python package module with executable bit set but no shebang needed; formatting-only"
+        },
+        {
+          "id": "T2",
+          "action": "drop",
+          "reason": "I001 \u2014 import ordering is a pure style nit with no maintainability or defect risk"
+        },
+        {
+          "id": "T3",
+          "action": "drop",
+          "reason": "R1725 \u2014 Python 3 modernisation suggestion (super without args); both forms work identically, pure style"
+        },
+        {
+          "id": "T4",
+          "action": "drop",
+          "reason": "UP008 \u2014 same underlying issue as T3 (super() style), reported by a different tool; pure style"
+        },
+        {
+          "id": "T5",
+          "action": "drop",
+          "reason": "W0613 \u2014 algorithm and similar params are interface-required arguments for the Castellan KeyManager contract; ConfKeyManager always uses a fixed AES key from config and intentionally ignores algorithm/length"
+        },
+        {
+          "id": "T6",
+          "action": "keep",
+          "line": 87,
+          "ruleId": "C0116"
+        }
+      ]
+    },
+    "src/nova/limit/__init__.py": {
+      "candidates": [
+        {
+          "id": "T1",
+          "action": "drop",
+          "reason": "EXE002 in group R01 \u2014 Python package module with executable bit set but no shebang needed; formatting-only"
+        }
+      ]
+    },
+    "src/nova/limit/local.py": {
+      "candidates": [
+        {
+          "id": "T1",
+          "action": "drop",
+          "reason": "C0114 \u2014 module docstring is an optional style convention in this internal module; no maintainability impact"
+        },
+        {
+          "id": "T2",
+          "action": "drop",
+          "reason": "EXE002 in group R01 \u2014 Python package module with executable bit set but no shebang needed; formatting-only"
+        },
+        {
+          "id": "T3",
+          "action": "drop",
+          "reason": "I001 \u2014 import ordering is a pure style nit with no maintainability or defect risk"
+        },
+        {
+          "id": "T4",
+          "action": "drop",
+          "reason": "C405 \u2014 using set([...]) vs {...} is a minor style preference; the runtime semantics are identical for the constant set definitions at lines 36-41 and 48-52"
+        },
+        {
+          "id": "T5",
+          "action": "drop",
+          "reason": "W0613 \u2014 always_zero_usage, _keypair_count, _server_group_count, _server_group_members_count are count callbacks whose signatures are mandated by the DB_COUNT_FUNCTION interface; unused args are intentional"
+        },
+        {
+          "id": "T6",
+          "action": "drop",
+          "reason": "C0209 \u2014 percent format vs f-string is a pure style preference with no maintainability or defect risk"
+        },
+        {
+          "id": "T7",
+          "action": "drop",
+          "reason": "UP031 \u2014 same underlying style issue as T6 reported by a different tool; pure style"
+        },
+        {
+          "id": "T8",
+          "action": "drop",
+          "reason": "C0201 \u2014 iterating dict vs dict.keys() is a pure style nit; no defect risk"
+        },
+        {
+          "id": "T9",
+          "action": "drop",
+          "reason": "SIM118 \u2014 same issue as T8 reported by a different tool; pure style"
+        },
+        {
+          "id": "T10",
+          "action": "keep",
+          "line": 208,
+          "ruleId": "C0116"
+        },
+        {
+          "id": "M1",
+          "action": "keep",
+          "line": 148,
+          "ruleId": "nesting"
+        }
+      ]
+    },
+    "src/nova/limit/placement.py": {
+      "candidates": [
+        {
+          "id": "T1",
+          "action": "drop",
+          "reason": "C0114 \u2014 module docstring is an optional style convention; no maintainability impact"
+        },
+        {
+          "id": "T2",
+          "action": "drop",
+          "reason": "EXE002 in group R01 \u2014 Python package module with executable bit set but no shebang needed; formatting-only"
+        },
+        {
+          "id": "T3",
+          "action": "drop",
+          "reason": "I001 \u2014 import ordering is a pure style nit with no maintainability or defect risk"
+        },
+        {
+          "id": "T4",
+          "action": "keep",
+          "line": 45,
+          "ruleId": "R0912"
+        },
+        {
+          "id": "T5",
+          "action": "drop",
+          "reason": "C0209 \u2014 percent format vs f-string is a pure style preference with no maintainability or defect risk"
+        },
+        {
+          "id": "T6",
+          "action": "drop",
+          "reason": "UP031 \u2014 same underlying style issue as T5 reported by a different tool; pure style"
+        },
+        {
+          "id": "T7",
+          "action": "keep",
+          "line": 68,
+          "ruleId": "B005"
+        },
+        {
+          "id": "T8",
+          "action": "drop",
+          "reason": "SIM102 \u2014 nested if simplification is a pure style preference; no defect risk"
+        },
+        {
+          "id": "T9",
+          "action": "keep",
+          "line": 143,
+          "ruleId": "W0613"
+        },
+        {
+          "id": "T10",
+          "action": "keep",
+          "line": 152,
+          "ruleId": "R0913"
+        },
+        {
+          "id": "T11",
+          "action": "keep",
+          "line": 209,
+          "ruleId": "W0707"
+        },
+        {
+          "id": "T12",
+          "action": "keep",
+          "line": 223,
+          "ruleId": "C0116"
+        },
+        {
+          "id": "M1",
+          "action": "keep",
+          "line": 45,
+          "ruleId": "ccn"
+        },
+        {
+          "id": "M2",
+          "action": "keep",
+          "line": 45,
+          "ruleId": "nesting"
+        },
+        {
+          "id": "M3",
+          "action": "keep",
+          "line": 152,
+          "ruleId": "params"
+        },
+        {
+          "id": "M4",
+          "action": "keep",
+          "line": 152,
+          "ruleId": "nesting"
+        }
+      ]
+    },
+    "src/nova/limit/utils.py": {
+      "candidates": [
+        {
+          "id": "T1",
+          "action": "drop",
+          "reason": "C0114 \u2014 module docstring is an optional style convention; no maintainability impact"
+        },
+        {
+          "id": "T2",
+          "action": "drop",
+          "reason": "EXE002 in group R01 \u2014 Python package module with executable bit set but no shebang needed; formatting-only"
+        },
+        {
+          "id": "T3",
+          "action": "drop",
+          "reason": "I001 \u2014 import ordering is a pure style nit with no maintainability or defect risk"
+        },
+        {
+          "id": "T4",
+          "action": "keep",
+          "line": 33,
+          "ruleId": "C0116"
+        },
+        {
+          "id": "T5",
+          "action": "keep",
+          "line": 37,
+          "ruleId": "C0115"
+        },
+        {
+          "id": "T6",
+          "action": "drop",
+          "reason": "R0903 \u2014 IdentityClient is an intentional single-method adapter/proxy class; too-few-methods is by design"
+        },
+        {
+          "id": "T7",
+          "action": "keep",
+          "line": 53,
+          "ruleId": "W0603"
+        },
+        {
+          "id": "T8",
+          "action": "drop",
+          "reason": "C0209 \u2014 percent format vs f-string is a pure style preference with no maintainability or defect risk"
+        },
+        {
+          "id": "T9",
+          "action": "drop",
+          "reason": "UP031 \u2014 same underlying style issue as T8 reported by a different tool; pure style"
+        },
+        {
+          "id": "M1",
+          "action": "keep",
+          "line": 52,
+          "ruleId": "nesting"
+        },
+        {
+          "id": "M2",
+          "action": "keep",
+          "line": 91,
+          "ruleId": "nesting"
+        }
+      ]
+    },
+    "src/nova/servicegroup/__init__.py": {
+      "candidates": [
+        {
+          "id": "T1",
+          "action": "drop",
+          "reason": "EXE002 in group R01 \u2014 Python package module with executable bit set but no shebang needed; formatting-only"
+        }
+      ]
+    },
+    "src/nova/servicegroup/api.py": {
+      "candidates": [
+        {
+          "id": "T1",
+          "action": "drop",
+          "reason": "EXE002 in group R01 \u2014 Python package module with executable bit set but no shebang needed; formatting-only"
+        },
+        {
+          "id": "T2",
+          "action": "drop",
+          "reason": "I001 \u2014 import ordering is a pure style nit with no maintainability or defect risk"
+        },
+        {
+          "id": "T3",
+          "action": "keep",
+          "line": 37,
+          "ruleId": "C0115"
+        },
+        {
+          "id": "T4",
+          "action": "drop",
+          "reason": "R0205 \u2014 class API(object) Python 2 compatibility idiom is harmless in Python 3; pure style"
+        },
+        {
+          "id": "T5",
+          "action": "drop",
+          "reason": "UP004 \u2014 same underlying style issue as T4 reported by a different tool; pure style"
+        }
+      ]
+    },
+    "src/nova/servicegroup/drivers/__init__.py": {
+      "candidates": [
+        {
+          "id": "T1",
+          "action": "drop",
+          "reason": "EXE002 in group R01 \u2014 Python package module with executable bit set but no shebang needed; formatting-only"
+        }
+      ]
+    },
+    "src/nova/servicegroup/drivers/base.py": {
+      "candidates": [
+        {
+          "id": "T1",
+          "action": "drop",
+          "reason": "C0114 \u2014 module docstring is an optional style convention for a 16-line abstract base file; no maintainability impact"
+        },
+        {
+          "id": "T2",
+          "action": "drop",
+          "reason": "EXE002 in group R01 \u2014 Python package module with executable bit set but no shebang needed; formatting-only"
+        },
+        {
+          "id": "T3",
+          "action": "drop",
+          "reason": "R0205 \u2014 class Driver(object) Python 2 compatibility idiom is harmless in Python 3; pure style"
+        },
+        {
+          "id": "T4",
+          "action": "drop",
+          "reason": "UP004 \u2014 same underlying style issue as T3 reported by a different tool; pure style"
+        }
+      ]
+    },
+    "src/nova/servicegroup/drivers/db.py": {
+      "candidates": [
+        {
+          "id": "T1",
+          "action": "drop",
+          "reason": "C0114 \u2014 module docstring is an optional style convention; no maintainability impact"
+        },
+        {
+          "id": "T2",
+          "action": "drop",
+          "reason": "EXE002 in group R01 \u2014 Python package module with executable bit set but no shebang needed; formatting-only"
+        },
+        {
+          "id": "T3",
+          "action": "drop",
+          "reason": "I001 \u2014 import ordering is a pure style nit with no maintainability or defect risk"
+        },
+        {
+          "id": "T4",
+          "action": "keep",
+          "line": 32,
+          "ruleId": "C0115"
+        },
+        {
+          "id": "T5",
+          "action": "drop",
+          "reason": "W0613 \u2014 DbDriver.__init__(self, *args, **kwargs) absorbs variadic arguments to maintain interface compatibility with the base Driver; unused args are intentional adapter pattern"
+        },
+        {
+          "id": "T6",
+          "action": "keep",
+          "line": 117,
+          "ruleId": "W0718"
+        }
+      ]
+    },
+    "src/nova/servicegroup/drivers/mc.py": {
+      "candidates": [
+        {
+          "id": "T1",
+          "action": "drop",
+          "reason": "C0114 \u2014 module docstring is an optional style convention; no maintainability impact"
+        },
+        {
+          "id": "T2",
+          "action": "keep",
+          "line": 1,
+          "ruleId": "R0801"
+        },
+        {
+          "id": "T3",
+          "action": "drop",
+          "reason": "EXE002 in group R01 \u2014 Python package module with executable bit set but no shebang needed; formatting-only"
+        },
+        {
+          "id": "T4",
+          "action": "drop",
+          "reason": "I001 \u2014 import ordering is a pure style nit with no maintainability or defect risk"
+        },
+        {
+          "id": "T5",
+          "action": "keep",
+          "line": 38,
+          "ruleId": "C0115"
+        },
+        {
+          "id": "T6",
+          "action": "drop",
+          "reason": "W0613 \u2014 MemcachedDriver.__init__(self, *args, **kwargs) absorbs variadic arguments to maintain interface compatibility; unused args are intentional adapter pattern"
+        },
+        {
+          "id": "T7",
+          "action": "drop",
+          "reason": "C0209 \u2014 percent format vs f-string is a pure style preference with no maintainability or defect risk"
+        },
+        {
+          "id": "T8",
+          "action": "drop",
+          "reason": "UP031 \u2014 same underlying style issue as T7 reported by a different tool; pure style"
+        },
+        {
+          "id": "T9",
+          "action": "keep",
+          "line": 111,
+          "ruleId": "W0718"
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "group": "R01",
+      "action": "drop",
+      "sampled": [
+        "src/nova/keymgr/__init__.py#T1",
+        "src/nova/keymgr/conf_key_mgr.py#T1",
+        "src/nova/limit/__init__.py#T1"
+      ],
+      "except": [],
+      "reason": "EXE002: all 12 files are Python package modules with the executable bit set but no shebang line is needed or appropriate; verified in __init__.py (0-line empty module), conf_key_mgr.py (Python class module), limit/__init__.py (empty init) \u2014 uniform formatting-only issue with no maintainability impact"
+    }
+  ],
+  "reviewedWithoutCandidates": []
+}

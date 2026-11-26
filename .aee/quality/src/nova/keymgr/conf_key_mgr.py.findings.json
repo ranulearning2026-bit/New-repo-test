@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "file": "src/nova/keymgr/conf_key_mgr.py",
+    "tool": "pylint",
+    "ruleId": "C0116",
+    "lineRange": {
+      "start": 87,
+      "end": 87
+    },
+    "title": "3 public methods of ConfKeyManager lack docstrings (create_key_pair L87, add_consumer L133, remove_consumer L138)",
+    "detail": "create_key_pair, add_consumer, and remove_consumer are public interface methods with no docstrings; callers cannot determine expected behaviour or error conditions from the signature alone. Add a one-line docstring to each method explaining its purpose or that it raises NotImplementedError.",
+    "category": "documentation",
+    "severity": "low",
+    "confidence": "confirmed"
+  }
+]

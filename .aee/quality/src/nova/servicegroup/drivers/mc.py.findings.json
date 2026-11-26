@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "file": "src/nova/servicegroup/drivers/mc.py",
+    "tool": "pylint",
+    "ruleId": "R0801",
+    "lineRange": {
+      "start": 1,
+      "end": 1
+    },
+    "title": "Duplicated _convert_keys_to_legacy_name and get_legacy_default_limits between limit/local.py and limit/placement.py",
+    "detail": "pylint R0801 reports ~15 identical lines between limit/local.py:200-215 and limit/placement.py:215-229 (the _convert_keys_to_legacy_name helper and get_legacy_default_limits function). Extract these into a shared module (e.g. limit/utils.py) to prevent divergence.",
+    "category": "duplication",
+    "severity": "medium",
+    "confidence": "confirmed"
+  },
+  {
+    "file": "src/nova/servicegroup/drivers/mc.py",
+    "tool": "pylint",
+    "ruleId": "C0115",
+    "lineRange": {
+      "start": 38,
+      "end": 38
+    },
+    "title": "Class MemcachedDriver lacks a docstring",
+    "detail": "MemcachedDriver has no class docstring. Add a brief description of the memcached-backed heartbeat mechanism and the cache expiry/TTL behaviour.",
+    "category": "documentation",
+    "severity": "low",
+    "confidence": "confirmed"
+  },
+  {
+    "file": "src/nova/servicegroup/drivers/mc.py",
+    "tool": "pylint,ruff",
+    "ruleId": "W0718",
+    "lineRange": {
+      "start": 111,
+      "end": 111
+    },
+    "title": "Broad 'except Exception' in _report_state can silently swallow unexpected errors",
+    "detail": "Line 111 catches all Exceptions during periodic service state reporting. Unexpected errors may only be logged and swallowed, leaving service membership state stale. Narrow the except clause to known exception types or re-raise after logging.",
+    "category": "error-handling",
+    "severity": "medium",
+    "confidence": "confirmed"
+  }
+]

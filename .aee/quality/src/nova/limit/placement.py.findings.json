@@ -1,1 +1,142 @@
-[]
+[
+  {
+    "file": "src/nova/limit/placement.py",
+    "tool": "pylint",
+    "ruleId": "R0912",
+    "lineRange": {
+      "start": 45,
+      "end": 45
+    },
+    "title": "_get_usage has 13 branches, exceeding the threshold of 12",
+    "detail": "pylint R0912 reports 13 conditional branches in _get_usage, one above the threshold of 12. Combined with CCN=16 and nesting=10, this function is difficult to read and test. Extract distinct resource-class handling blocks into named helpers to reduce branch count.",
+    "category": "complexity",
+    "severity": "medium",
+    "confidence": "confirmed"
+  },
+  {
+    "file": "src/nova/limit/placement.py",
+    "tool": "lizard",
+    "ruleId": "ccn",
+    "lineRange": {
+      "start": 45,
+      "end": 113
+    },
+    "title": "_get_usage has cyclomatic complexity 16, exceeding threshold of 15",
+    "detail": "lizard reports CCN=16 (threshold 15) for _get_usage (lines 45-113). Refactor distinct resource-class handling (orc.*, volume, quota) into separate strategy functions to bring complexity below the threshold.",
+    "category": "complexity",
+    "severity": "medium",
+    "confidence": "confirmed"
+  },
+  {
+    "file": "src/nova/limit/placement.py",
+    "tool": "lizard",
+    "ruleId": "nesting",
+    "lineRange": {
+      "start": 45,
+      "end": 113
+    },
+    "title": "_get_usage has maximum nesting depth 10, exceeding threshold of 4",
+    "detail": "lizard reports nesting=10 (threshold 4) in _get_usage. A depth of 10 is more than twice the threshold (2*4=8), making this a high-severity complexity finding. Flatten by extracting each deeply nested block into a dedicated helper function.",
+    "category": "complexity",
+    "severity": "high",
+    "confidence": "confirmed"
+  },
+  {
+    "file": "src/nova/limit/placement.py",
+    "tool": "ruff",
+    "ruleId": "B005",
+    "lineRange": {
+      "start": 68,
+      "end": 68
+    },
+    "title": ".strip() with multi-character string strips individual chars, not the whole substring",
+    "detail": "str.strip(chars) removes any leading/trailing character that appears in the chars set, not the string as a whole prefix or suffix. If the intent is prefix/suffix removal, use str.removesuffix/removeprefix (Python 3.9+). If per-character stripping is correct, add a comment to document that intent.",
+    "category": "bug-risk",
+    "severity": "medium",
+    "confidence": "confirmed"
+  },
+  {
+    "file": "src/nova/limit/placement.py",
+    "tool": "pylint",
+    "ruleId": "W0613",
+    "lineRange": {
+      "start": 143,
+      "end": 143
+    },
+    "title": "_get_enforcer's outer project_id parameter is unused; the closure shadows it with its own",
+    "detail": "The project_id argument of _get_enforcer is never referenced in the function body; the nested callback already receives its own project_id from the Enforcer at call time. The dead parameter misleads callers into thinking they bind the enforcer to a specific project. Remove the parameter or document why it is intentionally ignored.",
+    "category": "maintainability",
+    "severity": "low",
+    "confidence": "confirmed"
+  },
+  {
+    "file": "src/nova/limit/placement.py",
+    "tool": "pylint",
+    "ruleId": "R0913",
+    "lineRange": {
+      "start": 152,
+      "end": 152
+    },
+    "title": "enforce_num_instances_and_resources has 7 arguments, exceeding the threshold of 5",
+    "detail": "pylint R0913/R0917 reports 7 parameters on enforce_num_instances_and_resources vs the threshold of 5, confirmed by the lizard params metric. Introduce a dataclass or named tuple to bundle related arguments (request_spec, min_count, max_count) and reduce the arity.",
+    "category": "maintainability",
+    "severity": "medium",
+    "confidence": "confirmed"
+  },
+  {
+    "file": "src/nova/limit/placement.py",
+    "tool": "lizard",
+    "ruleId": "params",
+    "lineRange": {
+      "start": 152,
+      "end": 212
+    },
+    "title": "enforce_num_instances_and_resources has 7 parameters, exceeding threshold of 6",
+    "detail": "lizard reports params=7 (threshold 6) for enforce_num_instances_and_resources (lines 152-212). Group request_spec, min_count, and max_count into a dataclass to reduce the argument count below the threshold.",
+    "category": "maintainability",
+    "severity": "medium",
+    "confidence": "confirmed"
+  },
+  {
+    "file": "src/nova/limit/placement.py",
+    "tool": "lizard",
+    "ruleId": "nesting",
+    "lineRange": {
+      "start": 152,
+      "end": 212
+    },
+    "title": "enforce_num_instances_and_resources has maximum nesting depth 7, exceeding threshold of 4",
+    "detail": "lizard reports nesting=7 (threshold 4) in enforce_num_instances_and_resources (lines 152-212). Extract the inner retry and exception-handling blocks into named helpers to reduce nesting depth.",
+    "category": "complexity",
+    "severity": "medium",
+    "confidence": "confirmed"
+  },
+  {
+    "file": "src/nova/limit/placement.py",
+    "tool": "pylint",
+    "ruleId": "W0707",
+    "lineRange": {
+      "start": 209,
+      "end": 209
+    },
+    "title": "Exception raised without chaining; original ValueError context is lost",
+    "detail": "Line 209 catches ValueError and re-raises exception.TooManyInstances without 'from exc', discarding the original traceback. Use 'raise exception.TooManyInstances(str(e)) from exc' to preserve the exception chain for easier debugging.",
+    "category": "error-handling",
+    "severity": "low",
+    "confidence": "confirmed"
+  },
+  {
+    "file": "src/nova/limit/placement.py",
+    "tool": "pylint",
+    "ruleId": "C0116",
+    "lineRange": {
+      "start": 223,
+      "end": 223
+    },
+    "title": "3 public functions lack docstrings (get_legacy_default_limits L223, get_legacy_project_limits L229, get_legacy_counts L235)",
+    "detail": "get_legacy_default_limits, get_legacy_project_limits, and get_legacy_counts are public API functions with no docstrings. Add a one-line docstring to each describing the returned dict structure and any notable side effects such as registered-limits caching.",
+    "category": "documentation",
+    "severity": "low",
+    "confidence": "confirmed"
+  }
+]

@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "file": "src/nova/limit/local.py",
+    "tool": "lizard",
+    "ruleId": "nesting",
+    "lineRange": {
+      "start": 148,
+      "end": 195
+    },
+    "title": "enforce_db_limit has maximum nesting depth 5, exceeding threshold of 4",
+    "detail": "lizard reports nesting=5 (threshold 4) in enforce_db_limit (lines 148-195, 48 lines). The 5-level nesting makes the conditional logic hard to follow. Refactor the innermost nested block into a named helper function to flatten the structure.",
+    "category": "complexity",
+    "severity": "medium",
+    "confidence": "confirmed"
+  },
+  {
+    "file": "src/nova/limit/local.py",
+    "tool": "pylint",
+    "ruleId": "C0116",
+    "lineRange": {
+      "start": 208,
+      "end": 208
+    },
+    "title": "Public function get_legacy_default_limits lacks a docstring",
+    "detail": "get_legacy_default_limits is a public function with no docstring; callers cannot determine the structure of the returned dict or any caching behaviour from the signature alone. Add a one-line docstring describing the returned mapping.",
+    "category": "documentation",
+    "severity": "low",
+    "confidence": "confirmed"
+  }
+]

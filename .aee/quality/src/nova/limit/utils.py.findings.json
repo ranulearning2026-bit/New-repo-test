@@ -1,1 +1,72 @@
-[]
+[
+  {
+    "file": "src/nova/limit/utils.py",
+    "tool": "pylint",
+    "ruleId": "C0116",
+    "lineRange": {
+      "start": 33,
+      "end": 33
+    },
+    "title": "2 public functions lack docstrings (use_unified_limits L33, registered_limits L47)",
+    "detail": "use_unified_limits (called from local.py and placement.py) and registered_limits (a method of IdentityClient) have no docstrings. Add a one-line docstring to each; for use_unified_limits, document its dependency on CONF.quota.driver.",
+    "category": "documentation",
+    "severity": "low",
+    "confidence": "confirmed"
+  },
+  {
+    "file": "src/nova/limit/utils.py",
+    "tool": "pylint",
+    "ruleId": "C0115",
+    "lineRange": {
+      "start": 37,
+      "end": 37
+    },
+    "title": "Class IdentityClient lacks a docstring",
+    "detail": "IdentityClient has no class docstring. Add a brief description explaining its role as a Keystone identity proxy and noting the connection, service_id, and region_id parameters.",
+    "category": "documentation",
+    "severity": "low",
+    "confidence": "confirmed"
+  },
+  {
+    "file": "src/nova/limit/utils.py",
+    "tool": "pylint",
+    "ruleId": "W0603",
+    "lineRange": {
+      "start": 53,
+      "end": 53
+    },
+    "title": "Global statement in _identity_client creates a mutable singleton without thread safety",
+    "detail": "Line 53 uses 'global IDENTITY_CLIENT' for lazy singleton initialisation. In a concurrent environment two threads can both observe IDENTITY_CLIENT as None and each create a client; the second overwrites the first. Use a module-level lock or threading.local to guard the singleton creation.",
+    "category": "maintainability",
+    "severity": "medium",
+    "confidence": "confirmed"
+  },
+  {
+    "file": "src/nova/limit/utils.py",
+    "tool": "lizard",
+    "ruleId": "nesting",
+    "lineRange": {
+      "start": 52,
+      "end": 88
+    },
+    "title": "_identity_client has maximum nesting depth 6, exceeding threshold of 4",
+    "detail": "lizard reports nesting=6 (threshold 4) in _identity_client (lines 52-88). Extract the innermost conditional and error-handling blocks into helper functions to reduce nesting.",
+    "category": "complexity",
+    "severity": "medium",
+    "confidence": "confirmed"
+  },
+  {
+    "file": "src/nova/limit/utils.py",
+    "tool": "lizard",
+    "ruleId": "nesting",
+    "lineRange": {
+      "start": 91,
+      "end": 182
+    },
+    "title": "should_enforce has maximum nesting depth 7, exceeding threshold of 4",
+    "detail": "lizard reports nesting=7 (threshold 4) in should_enforce (lines 91-182), a 92-line business logic function with CCN=12. Flatten by extracting the per-limit-type classification loops into named helpers.",
+    "category": "complexity",
+    "severity": "medium",
+    "confidence": "confirmed"
+  }
+]
