@@ -30,3 +30,6 @@
 {"artifact": "Dependency Inventory", "path": ".aee/dependency-inventory.json", "by": "new-pipeline-dependency-analyzer", "commit": "c7497dc", "ts": "2026-11-26T11:40:33Z"}
 {"artifact": "Dependency Advisories", "path": ".aee/dependency-advisories.json", "by": "new-pipeline-dependency-analyzer", "commit": "c7497dc", "ts": "2026-11-26T11:40:33Z"}
 {"artifact": "Dependency Summary", "path": ".aee/dependency-summary.md", "by": "new-pipeline-dependency-analyzer", "commit": "c7497dc", "ts": "2026-11-26T11:40:33Z"}
+{"artifact": "Infrastructure Inventory", "path": ".aee/infrastructure-inventory.json", "by": "new-pipeline-infrastructure-analyzer", "commit": "c7497dc", "ts": "2026-11-26T11:39:19Z"}
+{"artifact": "Infrastructure Findings", "path": ".aee/infrastructure-findings.json", "by": "new-pipeline-infrastructure-analyzer", "commit": "c7497dc", "ts": "2026-11-26T11:39:19Z"}
+{"artifact": "Infrastructure Summary", "path": ".aee/infrastructure-summary.md", "by": "new-pipeline-infrastructure-analyzer", "commit": "c7497dc", "ts": "2026-11-26T11:39:20Z"}
