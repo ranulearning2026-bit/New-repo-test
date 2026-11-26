@@ -1,0 +1,12 @@
+{"artifact": "Doc:src/nova/keymgr/__init__.py", "path": "docs/src/nova/keymgr/__init__.py.md", "by": "new-pipeline-file-documenter", "commit": "08fdc33", "ts": "2026-11-26T11:29:00Z"}
+{"artifact": "Doc:src/nova/keymgr/conf_key_mgr.py", "path": "docs/src/nova/keymgr/conf_key_mgr.py.md", "by": "new-pipeline-file-documenter", "commit": "08fdc33", "ts": "2026-11-26T11:29:00Z"}
+{"artifact": "Doc:src/nova/limit/__init__.py", "path": "docs/src/nova/limit/__init__.py.md", "by": "new-pipeline-file-documenter", "commit": "08fdc33", "ts": "2026-11-26T11:29:00Z"}
+{"artifact": "Doc:src/nova/limit/local.py", "path": "docs/src/nova/limit/local.py.md", "by": "new-pipeline-file-documenter", "commit": "08fdc33", "ts": "2026-11-26T11:29:00Z"}
+{"artifact": "Doc:src/nova/limit/placement.py", "path": "docs/src/nova/limit/placement.py.md", "by": "new-pipeline-file-documenter", "commit": "08fdc33", "ts": "2026-11-26T11:29:00Z"}
+{"artifact": "Doc:src/nova/limit/utils.py", "path": "docs/src/nova/limit/utils.py.md", "by": "new-pipeline-file-documenter", "commit": "08fdc33", "ts": "2026-11-26T11:29:00Z"}
+{"artifact": "Doc:src/nova/servicegroup/__init__.py", "path": "docs/src/nova/servicegroup/__init__.py.md", "by": "new-pipeline-file-documenter", "commit": "08fdc33", "ts": "2026-11-26T11:29:01Z"}
+{"artifact": "Doc:src/nova/servicegroup/api.py", "path": "docs/src/nova/servicegroup/api.py.md", "by": "new-pipeline-file-documenter", "commit": "08fdc33", "ts": "2026-11-26T11:29:01Z"}
+{"artifact": "Doc:src/nova/servicegroup/drivers/__init__.py", "path": "docs/src/nova/servicegroup/drivers/__init__.py.md", "by": "new-pipeline-file-documenter", "commit": "08fdc33", "ts": "2026-11-26T11:29:01Z"}
+{"artifact": "Doc:src/nova/servicegroup/drivers/base.py", "path": "docs/src/nova/servicegroup/drivers/base.py.md", "by": "new-pipeline-file-documenter", "commit": "08fdc33", "ts": "2026-11-26T11:29:01Z"}
+{"artifact": "Doc:src/nova/servicegroup/drivers/db.py", "path": "docs/src/nova/servicegroup/drivers/db.py.md", "by": "new-pipeline-file-documenter", "commit": "08fdc33", "ts": "2026-11-26T11:29:01Z"}
+{"artifact": "Doc:src/nova/servicegroup/drivers/mc.py", "path": "docs/src/nova/servicegroup/drivers/mc.py.md", "by": "new-pipeline-file-documenter", "commit": "08fdc33", "ts": "2026-11-26T11:29:01Z"}
